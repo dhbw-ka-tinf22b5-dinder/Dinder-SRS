@@ -81,7 +81,9 @@ The following chapter provides an overview of this project with vision and Overa
 ## 2. Overall Description
 
 ### 2.1 Vision
-Inspired by offering platforms like ‘Ebay’ and ‘Kleinanzeigen’ we wanted to build an application that simplifies the process of finding a helping hand as much as ‘Tinder’. We plan to create a platform for people who are looking for someone to help with work. Covering online multiplayer games, tabletop, pen and paper or regular board games we want to provide a kind of bulletin board where people can state what they want to play, when and where they want to do it and how many people they are looking for. Others can then react to the postings and virtually join the play session to be connected by us so everyone can coordinate the actual play session together on a Common Playground.
+Inspired by offering platforms like ‘Ebay’ and ‘Kleinanzeigen’ we wanted to build an application that simplifies the process of finding a helping hand as much as ‘Tinder’. We plan to create a platform for people who are looking for someone to help with work.
+We want people to start finding jobs such as babysitting, gardening, cleaning tombstones or performing painting jobs.
+Our dream is that people are provided with a basic homepage to find their preferred jobs near them.
 
 ### 2.2 Use Case Diagram
 
@@ -93,32 +95,25 @@ Inspired by offering platforms like ‘Ebay’ and ‘Kleinanzeigen’ we wanted
 ### 2.3 Technology Stack
 The technology we use is:
 
-Backend:
--Gradle and Springboot
--H2 Database
+#### Backend:
+- Gradle
+- Spring Boot
+- MariaDB
 
-Frontend:
--Android with Java and XML
+#### Frontend:
+- Angular / React (tbd)
 
-IDE:
--IntelliJ and Android Studio
+#### IDE:
+- IntelliJ
+- partly Eclipse
 
-Project Management:
--YouTrack
--GitHub
--Microsoft Teams
+#### Project Management:
+- YouTrack
+- GitHub
+- Discord
 
-Deployment:
--Travis CI
--Docker and Heroku
-
-Testing:
--Cucumber
--Espresso
--JUnit
--Codacy
--CodeMR
--RestAssured
+#### Testing:
+- JUnit
 
 ## 3. Specific Requirements
 
