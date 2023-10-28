@@ -1,0 +1,16 @@
+@startuml
+actor User
+collections Login
+database Database
+
+User -> Login : Enter credentials
+Login -> Database : checks credentials
+alt correct credentials
+  Database -> Login : validates credentials
+  Login -> User : routes to main page
+else wrong credentials
+  Database -> Login : rejects credentials
+  Login -> User : displays error message and clears password field
+end
+
+@enduml
