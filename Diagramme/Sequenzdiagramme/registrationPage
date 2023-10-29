@@ -1,0 +1,23 @@
+@startuml
+actor User
+collections Registration
+database Database
+
+User -> Registration : Click on Register
+User -> Registration : Enter credentials
+Registration -> Registration : checks if passwords comply with requirements
+alt passwords comply
+  Registration -> Database : checks for duplicate account
+  alt no duplicate
+    Registration -> User : Sends E-Mail to confirm login
+    User -> Registration : confirms Account
+    Registration -> Database : makes new Databse entry
+  else duplicate found
+    Database -> Registration : sends error message
+    Registration -> User : displays error message
+  end
+else passwords don't comply
+  Registration -> User : displays error message and clears passwords
+end
+
+@enduml

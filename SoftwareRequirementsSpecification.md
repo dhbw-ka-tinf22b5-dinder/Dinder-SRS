@@ -51,9 +51,9 @@ Planned Subsystems are:
 * Friend List and User Rating:  
   Once the account system is created there will be the option to mark users as favorites. Also, users or game sessions should get a rating to counter abuse.
 * Connecting People:  
-  The host of a game session has to be notified when someone wants to join their game. Both must then be able to get in touch to organize the details, so messages between the host and the guest have to be enabled. This could be done via automated emails or a custom in-app system. For this an account system is needed.
+  The person who posts an available service task must be notified if somone wants to complete the service task. Both must then be able to get in touch to organize the details, so messages between the host and the guest have to be enabled. This could be done via automated emails or a custom in-app system. For this an account system is needed.
 * Storing Data:  
-  User data for accounts and possibly profiles has to be stored. Also, the game sessions have to be stored as datasets containing the form contents and possibly contact data. The data storage will form the foundation for the visualization, account system and the search feature.
+  User data for accounts and possibly profiles has to be stored. Also, the service tasks have to be stored as datasets containing the form contents and possibly contact data. The data storage will form the foundation for the visualization, account system and the search feature.
 * Finding your Game:  
   We need a tag system so everyone looking to join a game can search for the kind of games they are interested in. Possibly other aspects can be searchable, such as place or date. Tags must be stored and a search function developed.
 
@@ -81,9 +81,11 @@ The following chapter provides an overview of this project with vision and Overa
 ## 2. Overall Description
 
 ### 2.1 Vision
-Inspired by offering platforms like ‘Ebay’ and ‘Kleinanzeigen’ we wanted to build an application that simplifies the process of finding a helping hand as much as ‘Tinder’. We plan to create a platform for people who are looking for someone to help with work.
-We want people to start finding jobs such as babysitting, gardening, cleaning tombstones or performing painting jobs.
-Our dream is that people are provided with a basic homepage to find their preferred jobs near them.
+Inspired by offering platforms like ‘Ebay’ and ‘Kleinanzeigen’ we wanted to build an application that simplifies the process of finding a helping hand as much as ‘Tinder’. We plan to create a platform for people who are looking for someone to help with work. 
+  To be able to browse the available Tasks the typical Tinder interface will be used. Users can swipe left and right on available Service tasks. 
+
+OLD:
+Covering online multiplayer games, tabletop, pen and paper or regular board games we want to provide a kind of bulletin board where people can state what they want to play, when and where they want to do it and how many people they are looking for. Others can then react to the postings and virtually join the play session to be connected by us so everyone can coordinate the actual play session together on a Common Playground.
 
 ### 2.2 Use Case Diagram
 
@@ -100,12 +102,12 @@ The technology we use is:
 - Spring Boot
 - MariaDB
 
-#### Frontend:
-- Angular / React (tbd)
+Frontend:
+-Angular 
 
 #### IDE:
 - IntelliJ
-- partly Eclipse
+- Eclipse
 
 #### Project Management:
 - YouTrack
