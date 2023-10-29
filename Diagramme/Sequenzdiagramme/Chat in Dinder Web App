@@ -1,0 +1,22 @@
+@startuml ChatApplication
+
+title Chat in Dinder Web App
+actor User
+participant "Chat Application" as ChatApp
+participant "Chat Server" as ChatServer
+
+User -> ChatApp: Open chat
+activate ChatApp
+
+User -> ChatApp: Enter message
+ChatApp -> ChatServer: Send message
+activate ChatServer
+
+ChatServer --> ChatApp: Message received
+ChatServer --> User: Message delivered
+deactivate ChatServer
+
+ChatApp --> User: Message displayed
+deactivate ChatApp
+
+@enduml
