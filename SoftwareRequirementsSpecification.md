@@ -138,7 +138,7 @@ The app will provide the possibility to register and log in.
 #### 3.1.3 Form page for a new advertisement / edit an existing advertisement
 There is the possibility to fill out a form page to create a new service advertisement.
 
-![](Diagramme/Sequenzdiagramme/Form page for a new advertisement.png)
+![](Diagramme/Sequenzdiagramme/FormPageAdvertisement.png)
 
 #### 3.1.4 Swiping
 The user can similar to Tinder swipe through open service advertisements and chose his preferred tasks.
@@ -154,7 +154,7 @@ The user can use a search function with individual filters (ex.: Distance)
 #### 3.1.6 Chat function
 The user and the advertiser are able to exchange Details about the task in a private chat
 
-![](Diagramme/Sequenzdiagramme/Chat in Dinder Web App.png)
+![](Diagramme/Sequenzdiagramme/ChatDinder.png)
 
 ### 3.2 Usability
 We plan on designing the user interface as intuitive and self-explanatory as possible to make the user feel as comfortable as possible using the app. Though an FAQ document will be available, it should not be necessary to use it.
