@@ -86,10 +86,8 @@ Inspired by offering platforms like ‘Ebay’ and ‘Kleinanzeigen’ we wanted
 
 ### 2.2 Use Case Diagram
 
-![](Diagramme/Sequenzdiagramme/registrationPage.png)
+![](Diagramme/Sequenzdiagramme/UseCaseDiagram.png)
 
-- Green: Planned till end of december
-- Yellow: Planned till end of june
 
 ### 2.3 Technology Stack
 The technology we use is:
@@ -145,12 +143,12 @@ There is the possibility to fill out a form page to create a new service adverti
 #### 3.1.4 Swiping
 The user can similar to Tinder swipe through open service advertisements and chose his preferred tasks.
 
-![](Diagramme/Sequenzdiagramme/registrationPage.png)
+![]()
 
 #### 3.1.5 Search function for open service advertisements
 The user can use a search function with individual filters (ex.: Distance)
 
-![](Diagramme/Sequenzdiagramme/registrationPage.png)
+![]()
 
 
 #### 3.1.6 Chat function
