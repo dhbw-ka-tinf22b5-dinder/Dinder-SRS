@@ -85,7 +85,7 @@ To enable anyone to browse the available jobs, such as babysitting, gardening or
 
 ### 2.2 Use Case Diagram
 
-![](Diagramme/Sequenzdiagramme/UseCaseDiagram.png)
+![](Diagramme/UseCaseDiagram.png)
 
 
 ### 2.3 Technology Stack
@@ -146,12 +146,12 @@ There is the possibility to fill out a form page to create a new service adverti
 #### 3.1.4 Swiping
 The user can similar to Tinder swipe through open service advertisements and chose his preferred tasks.
 
-![]()
+![](Diagramme/Sequenzdiagramme/swipe.png)
 
 #### 3.1.5 Search function for open service advertisements
 The user can use a search function with individual filters (ex.: Distance)
 
-![]()
+![](Diagramme/Sequenzdiagramme/search.png)
 
 
 #### 3.1.6 Chat function
@@ -160,22 +160,19 @@ The user and the advertiser are able to exchange Details about the task in a pri
 ![](Diagramme/Sequenzdiagramme/ChatDinder.png)
 
 ### 3.2 Usability
-We plan on designing the user interface as intuitive and self-explanatory as possible to make the user feel as comfortable as possible using the app. Though an FAQ document will be available, it should not be necessary to use it.
+We plan on designing the user interface as intuitive and self-explanatory as possible to make the user feel as comfortable as possible using the website. Though an FAQ document will be available, it should not be necessary to use it.
 
 #### 3.2.1 No training time needed
 Our goal is that a user opens the Web application and is able to use all features without any explanation or help.
 
 #### 3.2.2 Familiar Feeling
-We want to implement an app with familiar designs and functions. This way the user is able to interact in familiar ways with the Web app without having to get to know new interfaces.
+We want to implement an website with familiar designs and functions. This way the user is able to interact in familiar ways with the Web app without having to get to know new interfaces.
 
 
 ### 3.3 Reliability
 
 #### 3.3.1 Availability
 The server shall be available 95% of the time. This also means we have to figure out the "rush hours" of our app because the downtime of the server is only tolerable when as few as possible players want to use the app.
-
-#### 3.3.2 Defect Rate
-Our goal is that we have no loss of any data. This is important so that the game sessions can carry on, even after a downtime of the server.
 
 ### 3.4 Performance
 
