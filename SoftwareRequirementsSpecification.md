@@ -81,8 +81,7 @@ The following chapter provides an overview of this project with vision and Overa
 
 ### 2.1 Vision
 Inspired by offering platforms like ‘Ebay’ and ‘Kleinanzeigen’ we wanted to build an application that simplifies the process of finding a helping hand as much as ‘Tinder’. We plan to create a platform for people who are looking for someone to help with work. 
-  To be able to browse the available Tasks the typical Tinder interface will be used. Users can swipe left and right on available Service tasks. 
-
+To enable anyone to browse the available jobs, such as babysitting, gardening or painting, the widely known Tinder interface will be used. Users can swipe left and right on available Service tasks.
 
 ### 2.2 Use Case Diagram
 
