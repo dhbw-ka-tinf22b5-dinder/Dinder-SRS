@@ -4,15 +4,15 @@
 1. Introduction
     1. Purpose
 
-       Der Zweck dieses Use Cases ist, eine neue Anzeige für eine Dienstleistung zu erstellen mit vorgegebenen Merkmalen.
+       The purpose of this use case is to create a new ad for a service with predefined characteristics.
     
     2. Scope
 
-       Insbesondere der Use Case "find work" und "work (chat)" ist direkt mit dem beschriebenen Use Case verbunden, da die beiden Use Cases ohne den hier beschriebenen nicht funktionieren.
+       In particular, the "find work" and "work (chat)" use cases are directly related to the described use case, since the two use cases do not work without the one described here.
     
     3. Definitions, Acronyms, and Abbreviations
 
-       wird bedarfsweise erstellt
+       to be defined
 
     4. References
    
@@ -29,21 +29,20 @@
 
 Request From Page:
 
-- Die Seite wird vom User angefragt und der Server schickt die Webseite an den User.
+- The page is requested by the user and the server sends the web page to the user.
     
 Fill out Form, Submit Form:
 
-- Der User füllt die Eingabefelder zur Erstellung einer Anzeige aus und bestätigt seine Eingabe. Diese wird dann an den Server geschickt.
+- The user fills in the input fields to create an ad and confirms his input. This is then sent to the server.
 
 Save Advertisement Data:
 
-- Nach Validierung der Eingaben durch den Server werden die Informationen an die Datenbank geschickt, wobei nach Erfolg die Datenbank eine Bestätigung an den Server sendet. 
+- After validation of the input by the server, the information is sent to the database, and after success the database sends a confirmation to the server. 
 
 Advertisement Added:
 
-- Der Webserver schickt die Bestätigung/Fehlermeldung an den User
+- The web server sends the confirmation/error message to the user.
 
 View Advertisement:
 
-- Nach erfolgreicher Erstellung kann der User sich seine erstellten Aktivitäten durch Server-User-Kommunikation
- anschauen
+- After successful creation, the user can view his created activities through server-user communication view
