@@ -1,0 +1,41 @@
+@startuml
+left to right direction
+
+package account {
+(register)
+(login)
+}
+
+package advertisement {
+(create)
+(edit)
+(delete)
+}
+
+package "find work" {
+(swipe)
+(search)
+}
+
+package work {
+(chat)
+(end work)
+(approve work)
+}
+
+:User:
+User --> register
+User --> login
+User --> swipe
+User --> search
+User --> chat
+User --> (end work)
+
+:advertiser:
+advertiser --> create
+advertiser --> edit
+advertiser --> delete
+advertiser --> chat
+advertiser --> (approve work)
+
+@enduml
