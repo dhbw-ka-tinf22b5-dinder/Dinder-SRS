@@ -1,5 +1,5 @@
 
-## Use-Case-Realization Specification: Account
+## Use-Case-Realization Specification: Registration
 
 1. Introduction
     1. Purpose
