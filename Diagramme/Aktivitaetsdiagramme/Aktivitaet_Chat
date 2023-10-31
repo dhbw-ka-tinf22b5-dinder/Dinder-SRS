@@ -1,0 +1,30 @@
+@startuml
+title Chat Application Activity Diagram
+
+|User|
+start
+
+: Open Chat Application;
+
+|Chat Application|
+: Enter a Message;
+|Chat Server Backend|
+: Send Message;
+: Message saved in Database;
+|Chat Application|
+: Message delivered;
+|Chat Server Backend|
+|User|
+: Messages displayed;
+stop
+
+|Chat Application|
+start
+: listens to Server;
+|Chat Server Backend|
+:sends all saved Messages;
+|User|
+: Messages displayed;
+: Exit Chat Application;
+stop
+@enduml

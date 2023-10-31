@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Dinder-SRS.iml" filepath="$PROJECT_DIR$/.idea/Dinder-SRS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Dinder-SRS.iml" filepath="$PROJECT_DIR$/Dinder-SRS.iml" />
     </modules>
   </component>
 </project>
