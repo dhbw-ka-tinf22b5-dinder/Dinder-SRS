@@ -8,11 +8,11 @@ WebApp Server -> WebApp Server : checks if passwords comply with requirements
 alt passwords comply
   WebApp Server -> Database : checks for duplicate account
   alt no duplicate
-    Database -> WebApp Server : send conformation
+    Database --> WebApp Server : send conformation
     WebApp Server -> Database : makes new Database entry
     WebApp Server -> User: displays confirmation message
   else duplicate found
-    Database -> WebApp Server : sends error message
+    Database --> WebApp Server : sends error message
     WebApp Server -> User : displays error message
   end
 else passwords don't comply
