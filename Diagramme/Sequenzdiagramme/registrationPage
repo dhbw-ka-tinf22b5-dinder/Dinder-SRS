@@ -3,8 +3,7 @@ actor User
 collections Registration
 database Database
 
-User -> Registration : Click on Register
-User -> Registration : Enter credentials
+User -> Registration : Enter user data
 Registration -> Registration : checks if passwords comply with requirements
 alt passwords comply
   Registration -> Database : checks for duplicate account
