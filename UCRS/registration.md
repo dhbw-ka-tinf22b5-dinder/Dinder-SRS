@@ -28,22 +28,30 @@
 
 ![Sequence Diagram](https://github.com/dhbw-ka-tinf22b5-dinder/Dinder-SRS/blob/main/Diagramme/Sequenzdiagramme/registrationPage.png)
 
-Request From Page:
+Enter user data:
 
-- The page is requested by the user and the server sends the web page to the user.
+- The user enters their user details on the registration page.
     
-Fill out Form, Submit Form:
+checks if passwords comply with requirements:
 
-- The user fills in the input fields to create an ad and confirms his input. This is then sent to the server.
+- The web app server checks the password if it meets our password requirements.
 
-Save Advertisement Data:
+check for duplicate account:
 
-- After validation of the input by the server, the information is sent to the database, and after success the database sends a confirmation to the server. 
+- The web app server sends query to the database to check for duplicate accounts. 
 
-Advertisement Added:
+send confirmation / send error message:
 
-- The web server sends the confirmation/error message to the user.
+- If there is no duplicate account, the database will send a confirmation; if there is, it will send an error message.
 
-View Advertisement:
+makes new database entry:
 
-- After successful creation, the user can view his created activities through server-user communication view
+- the web app server sends a SQL command to the database to add a new user to the database
+
+send and display confirmation:
+
+- the database sends a confirmation to the web app server which sends it to the user
+
+display error message and clear password:
+
+- If the password doesn't meet the requirements, the server displays an error message to the user and clears the password fields in the frontend.
