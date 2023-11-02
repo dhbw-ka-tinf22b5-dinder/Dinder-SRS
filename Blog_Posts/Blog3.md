@@ -136,7 +136,7 @@ Sequence diagram:
 
 Activity Diagram:
 
-UCRS:
+UCRS: ![ucrs registration](https://github.com/dhbw-ka-tinf22b5-dinder/Dinder-SRS/blob/main/UCRS/registration.md)
 
 #### 3.1.2 Logging in
 The app will provide the possibility to register and log in.
@@ -154,7 +154,7 @@ Sequence Diagram:
 
 Activity Diagram:
 
-UCRS (new advertisement): 
+UCRS (new advertisement): ![ucrs new advertisement](https://github.com/dhbw-ka-tinf22b5-dinder/Dinder-SRS/blob/main/UCRS/advertisement.md)
 
 #### 3.1.4 Swiping
 The user can similar to Tinder swipe through open service advertisements and chose his preferred tasks.
