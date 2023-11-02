@@ -268,4 +268,5 @@ The Team Members are:
 ## Dinder - GUI Mockup
 
 [link to main page](https://github.com/dhbw-ka-tinf22b5-dinder/Dinder-SRS/blob/main/Main.pdf)
+
 [link to login page](https://github.com/dhbw-ka-tinf22b5-dinder/Dinder-SRS/blob/main/Login-Registration.pdf)
