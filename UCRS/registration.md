@@ -28,7 +28,7 @@
 
 ![Sequence Diagram](https://github.com/dhbw-ka-tinf22b5-dinder/Dinder-SRS/blob/main/Diagramme/Sequenzdiagramme/registrationPage.png)
 
-Enter user data:
+enter user data:
 
 - The user enters their user details on the registration page.
     
