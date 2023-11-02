@@ -109,7 +109,7 @@ The technology we use is:
 - YouTrack
 - GitHub
 - Discord
--
+
 #### Deployment:
 - Travis CI
 - Docker and Heroku
