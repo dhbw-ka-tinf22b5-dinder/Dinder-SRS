@@ -1,22 +1,22 @@
 @startuml
 actor User
-collections WebApp Server
+collections WebApp_Server
 database Database
 
-User -> WebApp Server : Enter user data
-WebApp Server -> WebApp Server : checks if passwords comply with requirements
+User -> WebApp_Server : Enter user data
+WebApp_Server -> WebApp_Server : checks if passwords comply with requirements
 alt passwords comply
-  WebApp Server -> Database : checks for duplicate account
+  WebApp_Server -> Database : checks for duplicate account
   alt no duplicate
-    Database --> WebApp Server : send conformation
-    WebApp Server -> Database : makes new Database entry
-    WebApp Server -> User: displays confirmation message
+    Database --> WebApp_Server : send conformation
+    WebApp_Server -> Database : makes new Database entry
+    WebApp_Server -> User: displays confirmation message
   else duplicate found
-    Database --> WebApp Server : sends error message
-    WebApp Server -> User : displays error message
+    Database --> WebApp_Server : sends error message
+    WebApp_Server -> User : displays error message
   end
 else passwords don't comply
-  WebApp Server -> User : displays error message and clears passwords
+  WebApp_Server -> User : displays error message and clears passwords
 end
 
 @enduml
