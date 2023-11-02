@@ -11,7 +11,8 @@ alt passwords comply
   alt no duplicate
     Registration -> User : Sends E-Mail to confirm login
     User -> Registration : confirms Account
-    Registration -> Database : makes new Databse entry
+    Registration -> Database : makes new Database entry
+    Registration -> User: displays confirmation message
   else duplicate found
     Database -> Registration : sends error message
     Registration -> User : displays error message
