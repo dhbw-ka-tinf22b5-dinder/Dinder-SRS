@@ -1,5 +1,9 @@
 @startuml
 
+Class DinderApplication {
+static void main()
+}
+
 Class User {
 String email
 String name
@@ -40,9 +44,6 @@ String advertisement
 Instant dateTime
 }
 
-Class DinderApplication {
-static void main()
-}
 
 
 
@@ -62,10 +63,16 @@ Interface SwipeInformationRepository<SwipeInformation>
 Interface AdvertisementRepository<Advertisement>
 
 Service -l- UserRepository : use
-Service -- ChatMessagesRepository : use
+Service -u- ChatMessagesRepository : use
 Service -u- ChatRepository : use
-Service -d- SwipeInformationRepository : use
+Service -u- SwipeInformationRepository : use
 Service - AdvertisementRepository : use
 DinderRestController - Service : use
+
+Service -d- Chat : send
+Service - User : send
+Service - SwipeInformation : send
+Service - ChatMessages : send
+Service - Advertisement : send
 
 @enduml
