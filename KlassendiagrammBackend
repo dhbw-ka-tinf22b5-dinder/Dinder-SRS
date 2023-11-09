@@ -1,0 +1,71 @@
+@startuml
+
+Class User {
+String email
+String name
+String prename
+String pwdHash
+}
+
+
+Class Chat {
+Int chatID
+String advertisement
+String contracter
+}
+
+Class ChatMessages {
+Integer MessageID
+String Message
+Instant dateTime
+String Sender
+}
+
+Class Advertisement {
+Int AdvertisementID
+String title
+Double price
+String location
+Int plz
+String description
+Image image
+String creator
+Instant dateTime
+}
+
+Class SwipeInformation {
+Int swipeID
+String user
+String advertisement
+Instant dateTime
+}
+
+Class DinderApplication {
+static void main()
+}
+
+
+
+User "2" -l- "n" Chat : use >
+ChatMessages "n" -u- "1" Chat : assigned to >
+User "1" -d- "n" Advertisement : create >
+User "1" - "n" SwipeInformation : add >
+SwipeInformation "n" -d- "1" Advertisement : assigned to >
+Advertisement "1" - "n" Chat : assigned to <
+
+Class DinderRestController
+Class Service
+Interface UserRepository<User>
+Interface ChatMessagesRepository<ChatMessages>
+Interface ChatRepository<Chat>
+Interface SwipeInformationRepository<SwipeInformation>
+Interface AdvertisementRepository<Advertisement>
+
+Service -l- UserRepository : use
+Service -- ChatMessagesRepository : use
+Service -u- ChatRepository : use
+Service -d- SwipeInformationRepository : use
+Service - AdvertisementRepository : use
+DinderRestController - Service : use
+
+@enduml
