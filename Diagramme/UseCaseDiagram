@@ -31,11 +31,11 @@ User --> search
 User --> chat
 User --> (end work)
 
-:advertiser:
-advertiser --> create
-advertiser --> edit
-advertiser --> delete
-advertiser --> chat
-advertiser --> (approve work)
+:employer:
+employer --> create
+employer --> edit
+employer --> delete
+employer --> chat
+employer --> (approve work)
 
 @enduml
