@@ -35,7 +35,7 @@ This document serves as the Software Requirements Specification (SRS) for the "D
 ### 1.2 Scope
 The project is going to be realized as a Web Application.
 
-Actors of this App are Users. These users have the roles of client or a service provider.
+Actors of this App are Users. These users have the roles of contractor or a employer.
 
 Planned Subsystems are:
 * Login page:  
@@ -45,7 +45,7 @@ Planned Subsystems are:
 * Advertisement creation:  
   Users can create an advertisement for services for others to work on
 * Chat:  
-  client and provider chat to discuss details and pricing
+  contractor and employer chat to discuss details and pricing
 *  Account System:  
   Users can create accounts, so they can accept a service advertisement. User data must be stored alongside the posting data.
 * Swiping:
