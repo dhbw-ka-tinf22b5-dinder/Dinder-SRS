@@ -54,3 +54,8 @@ Sequence Diagram:
 [chat_Sequence](https://github.com/dhbw-ka-tinf22b5-dinder/Dinder-SRS/tree/main/Diagramme/Sequenzdiagramme/ChatDinder.png)
 
 Changelog: No Changes
+
+#### 3 Lifelines
+The components in each diagram now have lifelines.
+
+Changelog: lifelines
