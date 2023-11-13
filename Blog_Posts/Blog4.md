@@ -37,7 +37,7 @@ The Service holds instances of all the repository-classes, it exposes their func
 It also provides additional functionality that require some logic to be implemented.
 The DinderRestController defines the HTTP-endpoints for the application, which allow outside access to see and modify the data.
 
-### Sequence diagrams:
+### Sequence diagrams (Changes):
 
 #### 1 Form page for a new advertisement / edit an existing advertisement
 There is the possibility to fill out a form page to create a new service advertisement.
@@ -45,17 +45,14 @@ There is the possibility to fill out a form page to create a new service adverti
 Sequence Diagram:
 [form page_Sequence](https://github.com/dhbw-ka-tinf22b5-dinder/Dinder-SRS/tree/main/Diagramme/Sequenzdiagramme/FormPageAdvertisement.png)
 
-Changelog: Changed "User" to "Employer", Added blocks
+Changed "User" to "Employer", Added lifelines
 
-#### 2 Chat function
-The contractor and the employer are able to exchange Details about the task in a private chat
-
-Sequence Diagram:
-[chat_Sequence](https://github.com/dhbw-ka-tinf22b5-dinder/Dinder-SRS/tree/main/Diagramme/Sequenzdiagramme/ChatDinder.png)
-
-Changelog: No Changes
-
-#### 3 Lifelines
+#### 2 Change - Lifelines
 The components in each diagram now have lifelines.
 
-Changelog: lifelines
+Sequence diagrams:
+[chat_Sequence](https://github.com/dhbw-ka-tinf22b5-dinder/Dinder-SRS/tree/main/Diagramme/Sequenzdiagramme/ChatDinder.png)
+[login page_Sequence](https://github.com/dhbw-ka-tinf22b5-dinder/Dinder-SRS/tree/main/Diagramme/Sequenzdiagramme/loginPage.png)
+[registration page_Sequence](https://github.com/dhbw-ka-tinf22b5-dinder/Dinder-SRS/tree/main/Diagramme/Sequenzdiagramme/registrationPage.png)
+[search_Sequence](https://github.com/dhbw-ka-tinf22b5-dinder/Dinder-SRS/tree/main/Diagramme/Sequenzdiagramme/search.png)
+[swipe_Sequence](https://github.com/dhbw-ka-tinf22b5-dinder/Dinder-SRS/tree/main/Diagramme/Sequenzdiagramme/swipe.png)
