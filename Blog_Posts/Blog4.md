@@ -39,3 +39,18 @@ The DinderRestController defines the HTTP-endpoints for the application, which a
 
 ### Sequence diagrams:
 
+#### 1 Form page for a new advertisement / edit an existing advertisement
+There is the possibility to fill out a form page to create a new service advertisement.
+
+Sequence Diagram:
+[form page_Sequence](https://github.com/dhbw-ka-tinf22b5-dinder/Dinder-SRS/tree/main/Diagramme/Sequenzdiagramme/FormPageAdvertisement.png)
+
+Changelog: Changed "User" to "Employer", Added blocks
+
+#### 2 Chat function
+The contractor and the employer are able to exchange Details about the task in a private chat
+
+Sequence Diagram:
+[chat_Sequence](https://github.com/dhbw-ka-tinf22b5-dinder/Dinder-SRS/tree/main/Diagramme/Sequenzdiagramme/ChatDinder.png)
+
+Changelog: No Changes
