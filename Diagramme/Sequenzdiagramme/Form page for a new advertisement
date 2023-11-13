@@ -1,17 +1,21 @@
 @startuml
-title User filling out the form page for a new advertisement
+title Employer filling out the form page for a new advertisement
 
-actor "User"  as C
+actor "Employer"  as C
 participant "Web App Server" as S
 participant "Database" as DB
 
 C -> S: Request Form Page
+activate S
 S --> C: Form Page
 C -> S: Fill out Form
 C -> S: Submit Form
 S -> DB: Save Advertisement Data
+activate DB
 DB --> S: Confirmation
+deactivate DB
 S --> C: Advertisement Added
 C -> S: View Advertisement
 S --> C: Advertisement Details
+deactivate S
 @enduml
