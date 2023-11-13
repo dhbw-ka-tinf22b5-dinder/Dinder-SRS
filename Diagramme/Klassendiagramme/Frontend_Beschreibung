@@ -1,0 +1,19 @@
+The present class diagram describes the structure of the website "Dinder":
+
+Here's a brief description of the classes and their relationships:
+
+LoginPage: This class represents the page where users can log in. It includes text fields for the username and password, along with a login button.
+
+RegistrationPage: This class represents the page where users can register. It includes text fields for the username, password, password confirmation, and email address.
+
+MainPage: This class represents the main page of the application. It illustrates the typical Tinder system, allowing the contractor to swipe through advertisements.
+
+ChatWindow: This class represents the chat window where users can exchange messages. It includes fields for chat messages and the input field for new messages.
+
+ListedAdvertisements: This class represents a list of listed advertisements. It includes fields for listed ads.
+
+AcceptedAdvertisements: This class represents a list of accepted advertisements. It also includes fields for listed ads.
+
+NavigationBar: This class represents the navigation bar displayed on various pages. It includes buttons to switch between the "Your Chats," "My Listed Advertisements," "User," and "Main Page."
+
+SingleAdvertisement: This class represents a single ad. It includes fields for the ad image, employer name, ad title, date, time, and notes.
