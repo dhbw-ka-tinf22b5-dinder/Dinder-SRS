@@ -1,0 +1,53 @@
+@startuml
+class LoginPage {
+{field} TextfieldUsername
+{field} TextfieldPassword
+{field} ButtonLogin
+}
+class RegistrationPage {
+{field} TextfieldUsername
+{field}  TextfieldPassword
+{field}  TextfieldConfirmPassword
+{field}  TextfieldEmail
+}
+class MainPage {
+{field} AdvertisementPicture
+{field} AdvertisementTitle
+{field} SearchField
+{field}  SwipeButton
+}
+class ChatWindow {
+{field} ChatMessage
+{field} TextfieldNewMessage
+}
+class ListedAdvertisements {
+{field}ListedAdvertisement
+
+}
+class AccteptedAdvertisements {
+{field} ListedAdvertisement
+}
+class NavigationBar {
+{field} ButtonYourChats
+{field}ButtonMyListedAdervtisements
+{field} ButtonUser
+{field} ButtonMainPage
+}
+class SingleAdvertisement {
+{field} Picture
+{field} EmployerName
+{field} AdvertisementTitle
+{field} Date
+{field} Time
+{field} Notes
+}
+
+MainPage <|-- NavigationBar
+ChatWindow <|--NavigationBar
+ListedAdvertisements <|--  NavigationBar
+AccteptedAdvertisements <|-- NavigationBar
+LoginPage <|-- NavigationBar
+RegistrationPage <|--  NavigationBar
+ListedAdvertisements <|--  SingleAdvertisement
+AccteptedAdvertisements <|-- SingleAdvertisement
+@enduml
