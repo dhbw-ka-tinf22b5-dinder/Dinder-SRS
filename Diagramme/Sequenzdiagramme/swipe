@@ -3,8 +3,10 @@ actor User
 collections mainPage
 database Database
 
+activate mainPage
 mainPage -> Database: requests initial advertisement
 Database -> mainPage: sends initial advertisement
+activate Database
 mainPage -> User: displays advertisement
 loop until user found perfect advertisement
     User -> mainPage: clicks swipe
@@ -12,6 +14,7 @@ loop until user found perfect advertisement
     Database -> mainPage: sends new advertisement
     mainPage -> User: displays advertisement
 end
+deactivate Database
 User -> mainPage: clicks on advertisement
 mainPage -> User: shows detailed information
 
