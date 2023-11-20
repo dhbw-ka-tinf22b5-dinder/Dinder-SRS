@@ -1,4 +1,4 @@
-### Frontend (Demo):
+### Frontend:
 We built a simple login and registration form and a front page.
 We also created a navigation bar with a logo and implemented routing.
 When you click on the logo, you come back to the front page.
