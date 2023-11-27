@@ -134,7 +134,9 @@ To identify all useres we need an account system. This account system enables us
 Sequence diagram:
 ![register_Sequence](https://github.com/dhbw-ka-tinf22b5-dinder/Dinder-SRS/tree/main/Diagramme/Sequenzdiagramme/registrationPage.png)
 
-Activity Diagram:
+Activity Diagram:![register_Activity](https://github.com/dhbw-ka-tinf22b5-dinder/Dinder-SRS/tree/main/Diagramme/Aktivitaetsdiagramme/Aktivitaet_Register.png)
+
+Explanation: We use the typical structure to create a new account with Email verification. There are Error messages if the user already exists or the user enters illegal arguments. 
 
 UCRS: ![ucrs registration](https://github.com/dhbw-ka-tinf22b5-dinder/Dinder-SRS/blob/main/UCRS/registration.md)
 
@@ -169,14 +171,18 @@ The user can use a search function with individual filters (ex.: Distance)
 Sequence Diagram:
 ![search_Sequence](https://github.com/dhbw-ka-tinf22b5-dinder/Dinder-SRS/tree/main/Diagramme/Sequenzdiagramme/search.png)
 
-Activity Diagram:
+Activity Diagram:![search_Activity](https://github.com/dhbw-ka-tinf22b5-dinder/Dinder-SRS/tree/main/Diagramme/Aktivitaetsdiagramme/Search.png)
+
+Explanation: The idea is that the user enters a search query. This query is split into keywords. The server delivers all entries that contain one or more keywords to the Frontend.
 #### 3.1.6 Chat function
-The user and the advertiser are able to exchange Details about the task in a private chat
+The contractor and the employer are able to exchange Details about the task in a private chat
 
-Sequence Diagram:
-![chat_Sequence](https://github.com/dhbw-ka-tinf22b5-dinder/Dinder-SRS/tree/main/Diagramme/Sequenzdiagramme/ChatDinder.png)
+Sequence Diagram: ![chat_Sequence](https://github.com/dhbw-ka-tinf22b5-dinder/Dinder-SRS/tree/main/Diagramme/Sequenzdiagramme/ChatDinder.png)
 
-Activity Diagram:
+Activity Diagram: ![chat_Activity](https://github.com/dhbw-ka-tinf22b5-dinder/Dinder-SRS/tree/main/Diagramme/Aktivitaetsdiagramme/Aktivitaet_Chat.png)
+
+Explanation: The idea is that the chat application asks the server regularly if there are new chat messages for the chat room.
+
 ### 3.2 Usability
 We plan on designing the user interface as intuitive and self-explanatory as possible to make the user feel as comfortable as possible using the website. Though an FAQ document will be available, it should not be necessary to use it.
 
@@ -204,7 +210,7 @@ To provide the best App perfomance we aim to keep the response time as low as po
 ### 3.5 Supportability
 
 #### 3.5.1 Coding Standards
-We are going to write the code by using all of the most common clean code standards. For example we will name our variables and methods by their functionalities. This will keep the code easy to read by everyone and make further developement much easier.
+We are going to write the code by using all the most common clean code standards. For example, we will name our variables and methods by their functionalities. This will keep the code easy to read by everyone and make further developement much easier.
 
 #### 3.5.2 Testing Strategy
 The application will have a high test coverage and all important functionalities and edge cases should be tested. Further mistakes in the implementation will be discovered instantly, and it will be easy to locate the error.
