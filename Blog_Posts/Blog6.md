@@ -2,7 +2,7 @@
 
 We began to work on the Main Page Component. The typical Tinder-Swipe functionality will be implemented on this Page.
 Contractors, who are loking for work, can swipe through available service advertisements. 
-For each advertisment a short description will be displayed. There will be ,,Next'', ,,Last'' and ,,Accept'' Buttons.
+For each advertisment a short description will be displayed. There will be ,,Next'', ,,Previous'' and ,,Accept'' Buttons.
 
 - [Screenshot Mainpage 1](https://github.com/dhbw-ka-tinf22b5-dinder/Dinder-SRS/blob/main/MockUps/ScreenshotMainPage1.jpg)
 - [Screenshot Mainpage 2](https://github.com/dhbw-ka-tinf22b5-dinder/Dinder-SRS/blob/main/MockUps/ScreenshotMainPage2.jpg)
