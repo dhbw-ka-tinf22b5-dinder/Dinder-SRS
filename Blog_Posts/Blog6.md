@@ -6,7 +6,11 @@ In addition to the Users table, the other tables have been updated and adapted t
 
 ### Distribution of tasks
 Tobias - 
+
 Jonathan - 
+
 Jannis - 
+
 Manuel - Database (update database tables)
+
 Lukas - 
