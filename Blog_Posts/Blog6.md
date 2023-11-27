@@ -19,7 +19,7 @@ Additionally, we have improved the connection with the database to include all n
 As an extra feature, we have added an API-Documentation using Redoc (https://github.com/Redocly/redoc) to improve the compatibility with the frontend and to make communication more easy for both sides.
 
 ### Distribution of tasks
-Jannis - 
+Jannis - Frontend: registration, validation
 
 Jonathan - Implemented the Hibernate entities and REST-endpoints to access them
 
