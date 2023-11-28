@@ -11,13 +11,6 @@ String prename
 String pwdHash
 }
 
-
-Class Chat {
-Int chatID
-String advertisement
-String contracter
-}
-
 Class ChatMessages {
 Integer MessageID
 String Message
@@ -45,34 +38,40 @@ Instant dateTime
 }
 
 
-
-
-User "2" -l- "n" Chat : use >
-ChatMessages "n" -u- "1" Chat : assigned to >
+SwipeInformation "1" - "n" ChatMessages : assigned to <
 User "1" -d- "n" Advertisement : create >
 User "1" - "n" SwipeInformation : add >
 SwipeInformation "n" -d- "1" Advertisement : assigned to >
-Advertisement "1" - "n" Chat : assigned to <
 
 Class DinderRestController
-Class Service
+
+Package Service{
+Class UserService
+Class ChatMessageService
+Class AdvertisementService
+Class SwipeInformationService
+}
+
+DinderRestController -left- Service
+
 Interface UserRepository<User>
 Interface ChatMessagesRepository<ChatMessages>
-Interface ChatRepository<Chat>
 Interface SwipeInformationRepository<SwipeInformation>
 Interface AdvertisementRepository<Advertisement>
 
-Service -l- UserRepository : use
-Service -u- ChatMessagesRepository : use
-Service -u- ChatRepository : use
-Service -u- SwipeInformationRepository : use
-Service - AdvertisementRepository : use
-DinderRestController - Service : use
+UserService -u- UserRepository : use
+ChatMessageService -u- ChatMessagesRepository : use
+SwipeInformationService -u- SwipeInformationRepository : use
+AdvertisementService -u- AdvertisementRepository : use
 
-Service -d- Chat : send
-Service - User : send
-Service - SwipeInformation : send
-Service - ChatMessages : send
-Service - Advertisement : send
+
+
+UserService -d- User : send
+SwipeInformationService -d- SwipeInformation : send
+ChatMessageService -d- ChatMessages : send
+AdvertisementService -d- Advertisement : send
+
+DinderRestController -right[hidden]- AdvertisementRepository
+DinderRestController -right[hidden]- ChatMessagesRepository
 
 @enduml
