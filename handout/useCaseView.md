@@ -1,3 +1,5 @@
+# 4. Use-Case view
+
 ## login and registration
 ### The user has to register an account with userName, email and password
 ### Then the user has to login with his email and password
@@ -16,6 +18,29 @@
 ### those can be modified and deleted
 
 
-# realization
+# 4.1 realization
 
 ## login and registration
+### The user has to login one time with email and password and then can use cookies as an authentication method to stay logged in between different sessions
+
+
+# 8 Implementation view
+
+## database
+### model
+#### model: representation of the database in java classes
+
+# backend
+## controller, services, model, repositories, utility shit
+#### contents of controller: endpoint handling (annotation controller)
+#### services : handles logic for the controllers (annotation service)
+#### repositories : interface to the database (extends repository)
+#### utility shit : random shit
+
+
+# frontend
+## view
+
+# communication between layers
+## communication from backend to frontend : http-requests
+## communication from backend to database representation : spring boot magic
