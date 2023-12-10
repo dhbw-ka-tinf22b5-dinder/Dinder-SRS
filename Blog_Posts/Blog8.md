@@ -11,6 +11,7 @@
 - Our experience with building webprojects is limited
 # Process view
 These diagrams describe the basic processes of the application
+
 [chat_Sequence](https://github.com/dhbw-ka-tinf22b5-dinder/Dinder-SRS/tree/main/Diagramme/Sequenzdiagramme/ChatDinder.png)
 
 [login page_Sequence](https://github.com/dhbw-ka-tinf22b5-dinder/Dinder-SRS/tree/main/Diagramme/Sequenzdiagramme/loginPageSource.png)
