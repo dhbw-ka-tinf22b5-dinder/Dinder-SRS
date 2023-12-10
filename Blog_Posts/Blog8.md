@@ -9,7 +9,17 @@
 - We use React because we have the most experience in this framework.
 - It is mandatory to use free tools and hosting providers. 
 - Our experience with building webprojects is limited
+# Process view
+These diagrams describe the basic processes of the application
+[chat_Sequence](https://github.com/dhbw-ka-tinf22b5-dinder/Dinder-SRS/tree/main/Diagramme/Sequenzdiagramme/ChatDinder.png)
 
+[login page_Sequence](https://github.com/dhbw-ka-tinf22b5-dinder/Dinder-SRS/tree/main/Diagramme/Sequenzdiagramme/loginPageSource.png)
+
+[registration page_Sequence](https://github.com/dhbw-ka-tinf22b5-dinder/Dinder-SRS/tree/main/Diagramme/Sequenzdiagramme/registrationPage.png)
+
+[search_Sequence](https://github.com/dhbw-ka-tinf22b5-dinder/Dinder-SRS/tree/main/Diagramme/Sequenzdiagramme/search.png)
+
+[swipe_Sequence](https://github.com/dhbw-ka-tinf22b5-dinder/Dinder-SRS/tree/main/Diagramme/Sequenzdiagramme/swipe.png)
 # Implementation view
 ![image](https://github.com/dhbw-ka-tinf22b5-dinder/Dinder-SRS/assets/48451580/b49f882a-7556-48c9-b144-38b4665f6243)
 ## Overview
