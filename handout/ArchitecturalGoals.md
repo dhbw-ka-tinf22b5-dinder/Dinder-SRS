@@ -1,4 +1,4 @@
-### Architectural Goals
+# Architectural Goals
 
 ## We want modularity so we can easily implement new features. We ensure this by using Springboot. With this framework we are able to easily create new api endpoints. OpenAPI and redoc then create an api-specification for the new endpoint automatically.
 
