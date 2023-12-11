@@ -26,7 +26,7 @@ These diagrams describe the basic processes of the application
 
 [class diagram frontend](https://github.com/dhbw-ka-tinf22b5-dinder/Dinder-SRS/blob/main/Diagramme/Klassendiagramme/Frontend.png)
 # Implementation view
-![image](https://github.com/dhbw-ka-tinf22b5-dinder/Dinder-SRS/assets/48451580/b49f882a-7556-48c9-b144-38b4665f6243)
+![componentDiagram](https://github.com/dhbw-ka-tinf22b5-dinder/Dinder-SRS/assets/48451580/ce83cbed-08e8-41e3-8a37-3102a8f13437)
 ## Overview
 - Database
 - backend
