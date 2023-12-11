@@ -1,14 +1,14 @@
 @startuml
 node "frontend"{
-    redux <- [http-client] 
-    [webpage] <- redux 
+    redux - [http-client] 
+    [webpage] - redux 
 }
 node "backend"{
-  services <- [repositories] 
-  [controller] <- services
+  services - [repositories] 
+  [controller] - services
 }
-[controller] -down-> [http-client] : http
-database "MySql"{
-    [database] -> [repositories]
+[controller] -down- [http-client] : http
+database "PostgreSQL"{
+    [database] - [repositories]
   }
 @enduml
