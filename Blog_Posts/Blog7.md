@@ -4,7 +4,7 @@
 | Interoperability |	API-Specification |	on localhost:8080/api you are able to view endpoint specifications |	M |	L |
 | Modifiable |	granular-structured backend |	Through the standardized use of spring boot and a relational database schema is the backend easily expandable | H |	H |			
 |Useability	| User-Feedback	| The user can tell us how can improve even further	| M	| M |
-|Intuitive Design |	The website guides the user through its intuitive and simple design	| H |	M |
+||Intuitive Design |	The website guides the user through its intuitive and simple design	| H |	M |
 |Testability	| Testing frameworks	| During the development phase we use automated tests to help fulfill our quality requirements	| H	| M |
 
 ### Architectural decisions:
