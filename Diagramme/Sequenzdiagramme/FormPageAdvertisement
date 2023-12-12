@@ -1,7 +1,7 @@
 @startuml
-title Employer filling out the form page for a new advertisement
+title Advertiser filling out the form page for a new advertisement
 
-actor "Employer"  as C
+actor "Advertiser"  as C
 participant "Web App Server" as S
 participant "Database" as DB
 
