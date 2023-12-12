@@ -57,7 +57,10 @@ This document defines the architecture of Dinder.
 
 ## 2. Architectural Representation
 
-# TODO
+- Login Service: Handels Login & Registration
+- User Service: Information about the User, Accepted & Offered Jobs
+- Advertisement Service: Information about Advertisements (Picture, Title, Date, Description)
+- Chat Service: Chat between Users detached from Advertisements
 
 ## 3. Architectural Goals and Constraints
 
