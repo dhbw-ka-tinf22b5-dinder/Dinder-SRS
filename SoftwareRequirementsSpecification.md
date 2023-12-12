@@ -94,12 +94,23 @@ The technology we use is:
 ### Web-App
 
 #### Backend:
+- Hibernate
+- Redoc mit Springdoc
 - Gradle
 - Spring Boot
-- MariaDB
+- JWT
 
 ### Frontend:
+- vite
+- TypeScript
+- styled-components
+- Redux
 - React
+
+### Datenbank
+- PostgreSQL
+- Supabase
+- Flyway
 
 #### IDE:
 - IntelliJ
