@@ -104,7 +104,7 @@ represent the model in the MVC pattern.
 ## 6. Process View
 
 ![Chat](../Diagramme/Sequenzdiagramme/ChatApplication.png)
-![Form Page](../Diagramme/Sequenzdiagramme/Form%20page%20for%20a%20new%20advertisement.png)
+![Form Page](../Diagramme/Sequenzdiagramme/FormPageAdvertisement.png)
 ![Login](../Diagramme/Sequenzdiagramme/loginPageSource.png)
 ![Registration](../Diagramme/Sequenzdiagramme/registrationPage.png)
 ![Search](../Diagramme/Sequenzdiagramme/search.png)
@@ -146,18 +146,30 @@ What is needed is an environment on which a JVM can be run, together with intern
 
 ## 10. Size and Performance
 
-[A description of the major dimensioning characteristics of the software that impact the architecture, as well as the target performance constraints.]
+### Database and Backend
+
+The database and the backend needs to be available at all times. The response times need to be in a range to not impact
+user interaction.
+Both need to be extendable for future features. \
+The performance of the backend might impact the overall response times the most, so optimizations are crucial here.
+
+### Frontend
+
+The frontend should also be extendable to mirror the features made available by the backend. \
+The performance needs to be very good since the user directly interacts with it.
 
 ## 11. Quality
 
-[A description of how the software architecture contributes to all capabilities (other than functionality) of the system: extensibility, reliability, portability, and so on. If these characteristics have special significance, such as safety, security or privacy implications, they must be clearly delineated.]
-
-- Extensibility :
-    - modular design : We try to keep featrures seperated from each other, so we can easily modify them without changing
+- Extensibility:
+    - modular design: We try to keep featrures seperated from each other, so we can easily modify them without changing
       everything
-- portability :
-    - MVC-pattern : All the logic is in the backend, thus we only have to rewrite the frontend
-    - React : The frontend is written in react with typescript. This helps to port the code to other typescript
+- Portability:
+    - MVC-pattern: All the logic is in the backend, thus we only have to rewrite the frontend
+    - React: The frontend is written in react with typescript. This helps to port the code to other typescript
       frontends like react-native.
-- security :
-
+    - Java: The backend can be executed on any system that has an available JVM implementation, meaning most modern OS.
+- Security:
+    - BCrypt: We use BCrypt for password encryption and decryption to prevent clear text passwords being stored in the
+      database.
+    - JWT: JWT tokens are used to identify the users authenticity by providing a signed JWT token inside a server-only
+      cookie.
