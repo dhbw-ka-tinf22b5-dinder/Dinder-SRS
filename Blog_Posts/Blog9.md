@@ -6,4 +6,5 @@
 
 ### Repository & Scrum
 Repository:
+
 Scrum: We have sent you an invitation link by e-mail.
