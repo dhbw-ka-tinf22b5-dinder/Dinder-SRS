@@ -15,11 +15,11 @@ This document provides a comprehensive architectural overview of the system, usi
 ### 1.5	Overview
 
 - [1 Introduction](#1-introduction)
-    - [1.1 Purpose](#11purpose)
-    - [1.2 Scope](#12scope)
-    - [1.3 Definitions, Acronyms, and Abbreviations](#13definitions-acronyms-and-abbreviations)
-    - [1.4 References](#14references)
-    - [1.5 Overview](#15overview)
+  - [1.1 Purpose](#11purpose)
+  - [1.2 Scope](#12scope)
+  - [1.3 Definitions, Acronyms, and Abbreviations](#13definitions-acronyms-and-abbreviations)
+  - [1.4 References](#14references)
+  - [1.5 Overview](#15overview)
 - [2 Architectural Representation](#2-architectural-representation)
 - [3 Architectural Goals and Constraints](#3-architectural-goals-and-constraints)
 - [4 Use-Case View](#4-use-case-view)
