@@ -2,7 +2,7 @@
 
 ## login and registration
 ### The user has to register an account with userName, email and password
-### Then the user has to login with his email and password
+### Then the user has to log in with his email and password
 ### This is the authentication-process
 
 ## find work
@@ -21,7 +21,7 @@
 # 4.1 realization
 
 ## login and registration
-### The user has to login one time with email and password and then can use cookies as an authentication method to stay logged in between different sessions
+### The user has to log in one time with email and password and then can use cookies as an authentication method to stay logged in between different sessions
 
 
 # 8 Implementation view
