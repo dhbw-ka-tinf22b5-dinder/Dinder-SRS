@@ -25,3 +25,5 @@
 ### Backend
 - Research and testing for storing images in Supabase Storage
 - Some endpoints were added, for example for receiving information about advertisements
+### Frontend
+- http-client was updated to receive advertisements
