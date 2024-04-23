@@ -25,5 +25,6 @@
 ### Backend
 - Research and testing for storing images in Supabase Storage
 - Some endpoints were added, for example for receiving information about advertisements
+- Added the `-parameters` flag to the compiler, because it was missing it caused parameter names to be missing in the compiled program, meaning spring couldn't parameter names through reflection
 ### Frontend
 - http-client was updated to fetch advertisements
