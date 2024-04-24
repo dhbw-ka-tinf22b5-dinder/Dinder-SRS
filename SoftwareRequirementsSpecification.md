@@ -101,6 +101,7 @@ The technology we use is:
 - JWT
 
 ### Frontend:
+- Next.js
 - vite
 - TypeScript
 - styled-components
