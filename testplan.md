@@ -208,7 +208,7 @@ The following tools will be employed to support the test process for this Test P
 | Tool Category or Type | Tool Brand Name                              |
 |-----------------------|----------------------------------------------|
 | Repository            | [github.com](http://github.com/)             |
-| SonarCloud | [sonar]([https://app.codacy.com/](https://sonarcloud.io/))            |
+| SonarCloud | [sonar](https://sonarcloud.io/)            |
 | CI/CD Service         | [GitHub Actions](https://github.com/features/actions)           |
 
 
