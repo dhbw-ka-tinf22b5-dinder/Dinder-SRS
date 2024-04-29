@@ -124,7 +124,7 @@ Unit testing ensures, that the tested sourcecode works as expected. Therefore sm
 |Technique Objective    | Ensure that each unit of code (functions, methods, classes) works as intended                  |
 |Technique              | Implement test methods using JUnit Framework, Mockito library (Backend) |
 |Oracles                | Test results are logged in CI/CD tool (SonarCloud/GitHub Actions), and compared against expected output to determine if the tests passed or failed|
-|Required Tools         | JUnit 5 and Mockito Dependencies in Backend, CI/CD Pipeline                    |
+|Required Tools         | JUnit 5 and Mockito Dependencies in Backend, Vitest in Frontend, CI/CD Pipeline                    |
 |Success Criteria       | All tests pass. |
 |Special Considerations | -                                                                   |
 
