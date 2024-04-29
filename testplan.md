@@ -18,27 +18,18 @@
             - [5.1.2 UI Testing](#512-ui-testing)
             - [5.1.3 Integration Testing (API Testing)](#513-integration-testing-api-testing)
         - [5.2 Total Test Coverage](#52-total-test-coverage)
-    - [6. Entry and Exit Criteria](#6-entry-and-exit-criteria)
-        - [6.1 Test Plan](#61-test-plan)
-            - [6.1.1 Test Plan Entry Criteria](#611-test-plan-entry-criteria)
-            - [6.1.2 Test Plan Exit Criteria](#612-test-plan-exit-criteria)
-    - [7. Deliverables](#7-deliverables)
-        - [7.1 Test Evaluation Summaries](#71-test-evaluation-summaries)
-        - [7.2 Reporting on Test Coverage](#72-reporting-on-test-coverage)
-        - [7.3 Perceived Quality Reports](#73-perceived-quality-reports)
-        - [7.4 Incident Logs and Change Requests](#74-incident-logs-and-change-requests)
-        - [7.5 Smoke Test Suite and Supporting Test Scripts](#75-smoke-test-suite-and-supporting-test-scripts)
-    - [8. Testing Workflow](#8-testing-workflow)
-    - [9. Environmental Needs](#9-environmental-needs)
-        - [9.1 Base System Hardware](#91-base-system-hardware)
-        - [9.2 Base Software Elements in the Test Environment](#92-base-software-elements-in-the-test-environment)
-        - [9.3 Productivity and Support Tools](#93-productivity-and-support-tools)
-    - [10. Responsibilities, Staffing, and Training Needs](#10-responsibilities-staffing-and-training-needs)
-        - [10.1 People and Roles](#101-people-and-roles)
-        - [10.2 Staffing and Training Needs](#102-staffing-and-training-needs)
-    - [11. Iteration Milestones](#11-iteration-milestones)
-    - [12. Risks, Dependencies, Assumptions, and Constraints](#12-risks-dependencies-assumptions-and-constraints)
-    - [13. Management Process and Procedures](#13-management-process-and-procedures)
+    - [6. Deliverables](#6-deliverables)
+        - [6.1 Test Evaluation Summaries](#61-test-evaluation-summaries)
+        - [6.2 Reporting on Test Coverage](#62-reporting-on-test-coverage)
+        - [6.3 Perceived Quality Reports](#63-perceived-quality-reports)
+        - [6.4 Incident Logs and Change Requests](#64-incident-logs-and-change-requests)
+        - [6.5 Smoke Test Suite and Supporting Test Scripts](#65-smoke-test-suite-and-supporting-test-scripts)
+    - [7. Testing Workflow](#7-testing-workflow)
+    - [8. Environmental Needs](#8-environmental-needs)
+        - [8.1 Base System Hardware](#81-base-system-hardware)
+        - [8.2 Base Software Elements in the Test Environment](#82-base-software-elements-in-the-test-environment)
+        - [8.3 Productivity and Support Tools](#83-productivity-and-support-tools)
+    - [9. Risks, Dependencies, Assumptions, and Constraints](#9-risks-dependencies-assumptions-and-constraints)
 
 ## 1. Introduction
 
@@ -171,18 +162,17 @@ The total test coverage of the backend should be above 51%.
 ## 6. Deliverables
 
 ## 6.1 Test Evaluation Summaries
-The project owns a certain amount of tests in the Frontend and Backend. Each pushed commit should trigger the projects CI/CD Pipeline, which builds the application and executes the tests with a code analysis with Codacy. (In our final demo this sadly does not work yet)
+The project owns a certain amount of tests in the Frontend and Backend. Each pushed commit should trigger the projects CI/CD Pipeline, which builds the application and executes the tests with a code analysis with SonarCloud.
 
 
 ## 6.2 Reporting on Test Coverage
-This happens manually every time a developer writes a new test with the test coverage tools EclEmma and IntelliJ IDEA Code Coverage and with the tool Codacy.
+This happens automatically on a push with SonarCloud.
 
 ## 6.3 Perceived Quality Reports
-If a build of our CI/CD Pipeline fails the administrators will be messaged. This includes a fail due to a failed test. Furthermore, the code quality tool is codacy.
+If a build of our CI/CD Pipeline fails the administrators will be messaged. This includes a fail due to a failed test.
 
 ## 6.4 Incident Logs and Change Requests
-Codacy should be added to the CI/CD pipeline. Every time someone pushes to the main repository, the pipeline with a build will be triggered. If a build fails this is directly visible in Jenkins.
-
+Every time someone pushes to the main repository, the pipeline with a build will be triggered. If a build fails this is directly visible in GitHub Actions.
 
 ## 6.5 Smoke Test Suite and Supporting Test Scripts
 The automated test execution in our CI/CD Pipeline enables regression testing. With this approach it is clearly visible when changes break existing functions and affect the correct behaviour of the application.
@@ -200,19 +190,16 @@ The following table sets forth the system resources for the test effort presente
 
 | Resource              | Quantity | Name and Type                |
 |-----------------------|:--------:|------------------------------|
-| CI/CD server          |    1     | Jenkins              |
-| local test machine    |    1     | notebook (Eileen, Niklas, Matteo, Julian, Marius)       |
-| web application (Dinder.de)   |    1     | web application |
-
+| CI/CD server          |    1     | GitHub Actions              |
+| local test machine    |    1     | notebook       |
 
 ### 8.2 Base Software Elements in the Test Environment
 The following base software elements are required in the test environment for this Test Plan.
 
 | Software Element Name |  Type and Other Notes                        |
 |-----------------------|----------------------------------------------|
-| Eclipse, IntelliJ, Visual Studio Code        | Test Runner / IDE                            |
-| JUnit 5, Mockito, flutter_test           | Unit testing library                         |
-| Cypress              | UI testing library                           |
+| IntelliJ, Visual Studio Code        | Test Runner / IDE                            |
+| JUnit 5, Mockito           | Unit testing library                         |
 
 
 ### 8.3 Productivity and Support Tools
@@ -221,21 +208,11 @@ The following tools will be employed to support the test process for this Test P
 | Tool Category or Type | Tool Brand Name                              |
 |-----------------------|----------------------------------------------|
 | Repository            | [github.com](http://github.com/)             |
-| Test Coverage Monitor | [codacy](https://app.codacy.com/)            |
-| CI/CD Service         | [Jenkins](https://www.jenkins.io/)           |
+| SonarCloud | [sonar]([https://app.codacy.com/](https://sonarcloud.io/))            |
+| CI/CD Service         | [GitHub Actions](https://github.com/features/actions)           |
 
 
-## 9. Responsibilities, Staffing, and Training Needs
-
-### 9.1 People and Roles
-| Role          | Person Assigned |  Specific Responsibilities or Comments |
-|---------------|:--------------:|----------------------------------------|
-| Test Manager | Marius | Provides management oversight. |
-| Test Designer | Julian, Eileen, Niklas | Defines the technical approach to the implementation of the test effort. |
-| Test System Administrator | Julian, Matteo | Ensures test environment and assets are managed and maintained. |
-
-
-## 10. Risks, Dependencies, Assumptions, and Constraints
+## 9. Risks, Dependencies, Assumptions, and Constraints
 | Risk | Mitigation Strategy | Contingency (Risk is realized) |
 |------|---------------------|--------------------------------|
 | Code has lots of side effects | Refactor code (Clean Code principles) | publish new refactored tests |
