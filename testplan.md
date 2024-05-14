@@ -158,6 +158,7 @@ API Testing is part of integration testing. Integration tests test multiple modu
 ### 5.2 Total Test Coverage
 
 The total test coverage of the backend should be above 51%.
+This threshold was set because we want to test a majority of our application with limited resources and time. Due to this, we didn't head for the commonly used 80%, but rather for a lower 51%.
 
 ## 6. Deliverables
 
