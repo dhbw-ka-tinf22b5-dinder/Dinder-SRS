@@ -1,8 +1,8 @@
-# Testplan
-![TestPlan](https://github.com/dhbw-ka-tinf22b5-dinder/Dinder-SRS/blob/main/testplan.md)
+# Tests
 
 ## Update
-We added an explanation for the total test coverage in 5.2
+We added an explanation for the total test coverage in 5.2:
+![TestPlan](https://github.com/dhbw-ka-tinf22b5-dinder/Dinder-SRS/blob/main/testplan.md)
 
 # Further changes
 ## Frontend
