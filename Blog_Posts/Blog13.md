@@ -11,5 +11,5 @@ We added an explanation for the total test coverage in 5.2
 - Final implementation of Supabase Storage.
 - Added endpoint to insert an advertisement into the database
 ## Tests
-- Research for automated API-tests in GitHub Actions
+- Research for automated API-tests in GitHub Actions/SonarCloud
 - Research for tests with mocked beans in Spring Boot
