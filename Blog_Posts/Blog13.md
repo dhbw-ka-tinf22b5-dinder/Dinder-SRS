@@ -1,0 +1,15 @@
+# Testplan
+![TestPlan](https://github.com/dhbw-ka-tinf22b5-dinder/Dinder-SRS/blob/main/testplan.md)
+
+## Update
+We added an explanation for the total test coverage in 5.2
+
+# Further changes
+## Frontend
+- Migration from React and Vite to Next.js has been finished
+## Backend
+- Final implementation of Supabase Storage.
+- Added endpoint to insert an advertisement into the database
+## Tests
+- Research for automated API-tests in GitHub Actions
+- Research for tests with mocked beans in Spring Boot
