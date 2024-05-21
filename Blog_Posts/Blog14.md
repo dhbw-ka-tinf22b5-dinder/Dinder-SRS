@@ -25,3 +25,7 @@ Aktueller Stand bezüglich der Code-Qualität:
 
 ## Frontend
 - Weiterentwicklung der Oberfläche (Erstellung neuer Anzeigen)
+
+
+# Honourable Mention
+Marius und Felix für das Helfen beim Erstellen der Pipelines und Sonar
