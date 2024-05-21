@@ -25,7 +25,7 @@ Aktueller Stand bezüglich der Code-Qualität:
 
 ## Frontend
 - Weiterentwicklung der Oberfläche (Erstellung neuer Anzeigen)
-
+- Anzeigen stehen nicht mehr statisch im frontend sondern werden von dem backend geholt
 
 # Honourable Mention
 > **Marius** und **Felix** für das Helfen beim Erstellen der Pipelines und Sonar
