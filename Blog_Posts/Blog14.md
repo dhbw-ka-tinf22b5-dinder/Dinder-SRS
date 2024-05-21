@@ -28,4 +28,4 @@ Aktueller Stand bezüglich der Code-Qualität:
 
 
 # Honourable Mention
-Marius und Felix für das Helfen beim Erstellen der Pipelines und Sonar
+> **Marius** und **Felix** für das Helfen beim Erstellen der Pipelines und Sonar
