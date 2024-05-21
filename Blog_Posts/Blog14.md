@@ -22,3 +22,6 @@ Aktueller Stand bezüglich der Code-Qualität:
 ## Backend
 - Es wurden weitere Tests für den User Controller geschrieben, diese werden mit der Bibliothek REST Assured realisiert
 - Mehrere Pipeplines erstellt, die den Frontendcode formatten und linten
+
+## Frontend
+- Weiterentwicklung der Oberfläche (Erstellung neuer Anzeigen)
