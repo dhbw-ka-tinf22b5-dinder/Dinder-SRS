@@ -13,8 +13,12 @@ Dabei haben die Metriken den Wertebereich von A (am besten) bis E (am schlechtes
 
 Wenn diese Metriken erfüllt werden, gibt dies einen Indikator, dass keine großen Fehler in Bezug auf Sicherheit, Zuverlässigkeit und Wartbarkeit gemacht wurden. Dennoch sind diese Metriken nicht eine 100%ige Garantie, dass die Software in all diesen Punkten korrekt ist.
 
-Aktueller Stand bezüglich der Code-Qualität
-TODO: ADD IMAGES
+Aktueller Stand bezüglich der Code-Qualität:
+![](../Code-Quality/code-quality-blog-14.png)
 
 
 # Status-Report
+
+## Backend
+- Es wurden weitere Tests für den User Controller geschrieben, diese werden mit der Bibliothek REST Assured realisiert
+- Mehrere Pipeplines erstellt, die den Frontendcode formatten und linten
