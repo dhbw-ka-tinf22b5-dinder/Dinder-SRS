@@ -1,7 +1,7 @@
 # CI/CD
 
 ## Pipeline (grobe Beschreibung)
-Um die Code Qualität im Frontend zu verbessern wurde eine Pipline erstellt, die Biome ausführt. Biome ist ein Tool zur statischen Code Analyse. Diese Pipeline lintet den Source Code und gibt die Fehler/Verbesserungen als Bericht in der Pipeline.
+Um die Code Qualität im Frontend zu verbessern wurde eine Pipeline erstellt, die Biome ausführt. Biome ist ein Tool zur statischen Code Analyse. Diese Pipeline lintet den Source Code und gibt die Fehler/Verbesserungen als Bericht in der Pipeline.
 
 Außerdem wird Biome in einer anderen Pipeline verwendet, um den Frontend Code automatisch bei einem push zu formatieren.
 
