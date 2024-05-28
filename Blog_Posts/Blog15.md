@@ -3,7 +3,8 @@
 ## Pipeline
 *Grobe Beschreibung der Funktion*
 - @jonathan: Pipeline um automatisch zu builden + SonarCloud Reports
-- @manuel: Automatisches bilden des Artefakts
+
+Nach erfolgreichem durchlaufen der geschriebenen Test wird automatisch ein Artefakt in github actions gebildet. Bei einem fehlerhaften Test wird ein Fehler in der Pipeline angezeigt und die Artefakterstellung wird abgebrochen. Der Pipelineersteller wird daraufhin benachrichtigt. Das fertige Artefakt kann in der jeweiligen Pipeline im Anhang heruntergeladen werden.
 
 ## Konfigurationen
 Unsere Pipelines sind auf [GitHub](https://github.com/dhbw-ka-tinf22b5-dinder/Dinder/tree/main/.github/workflows) zu finden:
@@ -12,4 +13,4 @@ Unsere Pipelines sind auf [GitHub](https://github.com/dhbw-ka-tinf22b5-dinder/Di
 - SonarCube + Build: [build.yml](https://github.com/dhbw-ka-tinf22b5-dinder/Dinder/blob/main/.github/workflows/build.yml)
 
 ## Sonstige Neuerungen
-Gibt es welche?
+Im Frontend wurde teils die Dateiorganisation angepasst, sodass sie modularer gestaltet ist. Zusätzlich gibt es jetzt, je nach Webseitenbereich, auch eine diversifizierte Navigationsbar.
