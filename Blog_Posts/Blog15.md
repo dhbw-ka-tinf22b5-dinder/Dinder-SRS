@@ -1,8 +1,12 @@
 # CI/CD
 
-## Pipeline
-*Grobe Beschreibung der Funktion*
-- @jonathan: Pipeline um automatisch zu builden + SonarCloud Reports
+## Pipeline (grobe Beschreibung)
+Um die Code Qualität im Frontend zu verbessern wurde eine Pipline erstellt, die Biome ausführt. Biome ist ein Tool zur statischen Code Analyse. Diese Pipeline lintet den Source Code und gibt die Fehler/Verbesserungen als Bericht in der Pipeline.
+
+Außerdem wird Biome in einer anderen Pipeline verwendet, um den Frontend Code automatisch bei einem push zu formatieren.
+
+
+Um die Code Qualität im Backend zu analysieren wurde eine Pipeline entwickelt, die SonarCloud ausführt. Hierbei werden die im Backend geschriebenen Tests ausgeführt und zusammen mit der Code analyse von SonarCloud in SonarCloud angezeigt.
 
 Nach erfolgreichem durchlaufen der geschriebenen Test wird automatisch ein Artefakt in github actions gebildet. Bei einem fehlerhaften Test wird ein Fehler in der Pipeline angezeigt und die Artefakterstellung wird abgebrochen. Der Pipelineersteller wird daraufhin benachrichtigt. Nach einer erfolgreichen Artefaktbildung kann das Artefakt in der jeweiligen Pipeline im Anhang heruntergeladen werden.
 
