@@ -27,4 +27,4 @@ Im folgenden sind die einzelnen finalen Dokumente und Links des Projekts zusamme
 - [RMM]()
 - [Git-Repository]()
 - [Scrum-Youtrack]()
-- [Retrospektive]()
+- [Retrospektive](https://github.com/dhbw-ka-tinf22b5-dinder/Dinder-SRS/blob/main/finaleAbgabe/Retrospektive.md)
