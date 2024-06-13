@@ -1,0 +1,19 @@
+@startuml
+
+title swipepage
+actor User
+collections mainPage
+database Database
+activate Database
+
+activate mainPage
+mainPage -> Database: requests advertisements
+Database -> mainPage: sends advertisements
+mainPage -> User: displays advertisement
+loop until user found perfect advertisement
+    User -> mainPage: clicks swipe
+    mainPage -> User: displays another advertisement
+end
+deactivate Database
+
+@enduml

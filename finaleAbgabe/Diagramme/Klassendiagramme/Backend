@@ -1,0 +1,125 @@
+@startuml
+
+Class DinderApplication {
++static void main()
+}
+
+Package Entities{
+Class User {
+-String email
+-String name
+-String prename
+-String pwdHash
+}
+
+Class ChatMessages {
+-Integer MessageID
+-String Message
+-Instant dateTime
+-String Sender
+}
+
+Class Advertisement {
+-Int AdvertisementID
+-String title
+-Double price
+-String location
+-Int plz
+-String description
+-Image image
+-String creator
+-Instant dateTime
+}
+
+Class SwipeInformation {
+-Int swipeID
+-String user
+-String advertisement
+-Instant dateTime
+}
+}
+SwipeInformation "1" - "n" ChatMessages : assigned to <
+User "1" -d- "n" Advertisement : create >
+User "1" - "n" SwipeInformation : add >
+SwipeInformation "n" -d- "1" Advertisement : assigned to >
+
+Class DinderRestController
+
+Package Service{
+Class UserService{
+-UserRepository userRepository
+-PasswordEncoder passwordEncoder
+-SecurityService securityService
++boolean login(LoginModel model)
++boolean register(RegisterModel model)
++Optional<UsernamePasswordAuthenticationToken> validateToken(String token)
++UserDetails loadUserByUsername(String username)
++Optional<UserInformationModel> getUserInfo(String email)
+}
+Class ChatMessageService
+Class AdvertisementService
+Class SwipeInformationService
+Class SecurityService{
+-RsaKeyProperties rsaKeys
++PasswordEncoder passwordEncoder()
++String getEmail(String token)
++String generateKey(String email)
++Optional<UsernamePasswordAuthenticationToken> validate(String token, AuthorityFactory authorityFactory)
+}
+}
+Class RsaKeyProperties{
+-RSAPublicKey publicKey
+-RSAPrivateKey privateKey
+}
+DinderRestController -left- Service
+
+Interface UserRepository<User>
+Interface ChatMessagesRepository<ChatMessages>
+Interface SwipeInformationRepository<SwipeInformation>
+Interface AdvertisementRepository<Advertisement>
+Interface AuthorityFactory{
+~Set<GrantedAuthority> get(String email)
+}
+
+UserService -u- UserRepository : use
+ChatMessageService -u- ChatMessagesRepository : use
+SwipeInformationService -u- SwipeInformationRepository : use
+AdvertisementService -u- AdvertisementRepository : use
+
+RsaKeyProperties - SecurityService : use
+AuthorityFactory - SecurityService : use
+
+UserService -d- User : send
+SwipeInformationService -d- SwipeInformation : send
+ChatMessageService -d- ChatMessages : send
+AdvertisementService -d- Advertisement : send
+
+DinderRestController -right[hidden]- AdvertisementRepository
+DinderRestController -right[hidden]- ChatMessagesRepository
+SwipeInformationService -left[hidden]- SecurityService
+RsaKeyProperties -left[hidden]- DinderRestController
+AuthorityFactory-left[hidden]- DinderRestController
+
+Package Model{
+Package Request{
+Interface RequestModel{
+~boolean isInvalid()
+}
+Class LoginModel{
+-String loginModel
+-String password
+}
+Class RegisterModel{
+-String email
+-String username
+-STring password
+}
+}
+Package Response{
+
+}
+}
+RequestModel <|-- LoginModel
+RequestModel <|-- RegisterModel
+Model -left- Entities
+@enduml

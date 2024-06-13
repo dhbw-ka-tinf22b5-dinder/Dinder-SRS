@@ -1,0 +1,25 @@
+@startuml
+|User|
+start
+:clicks on search;
+|frontend|
+:focuses searchbar;
+|User|
+:enters query;
+|frontend|
+:sends query to backend;
+|backend|
+:splits query into key words;
+:sends request to database;
+|database|
+:sends collection of entries containing one or more of the key words;
+|backend|
+:sends result;
+|frontend|
+if(collection is empty) then (yes)
+  :displays "nothing found";
+else (no)
+  :displays result;
+endif
+stop
+@enduml

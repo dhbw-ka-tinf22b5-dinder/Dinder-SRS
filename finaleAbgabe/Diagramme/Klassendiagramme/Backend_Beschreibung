@@ -1,0 +1,12 @@
+A user can both create an advert and apply for others.
+Due to the cardinalities, an intermediate table is required for the second option.
+Several chats can be assigned to an advertisement, whereby each chat belongs to an advertisement.
+A chat consists of any number of messages that are assigned to a specific chat.
+A chat is also assigned to two users (contributor, employer), whereby a user can use any number of chats.
+
+The application starts in the DinderApplication class, which then forwards the start call to the spring framework.
+This in turn creates all needed instances of the classes in the application.
+The repository-classes contain default methods to modify the entities in the database and to find them by an optional criteria.
+The Service holds instances of all the repository-classes, it exposes their functionality to all other classes.
+It also provides additional functionality that require some logic to be implemented.
+The DinderRestController defines the HTTP-endpoints for the application, which allow outside access to see and modify the data.

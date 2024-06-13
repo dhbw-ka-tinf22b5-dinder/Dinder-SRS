@@ -1,0 +1,17 @@
+@startuml
+actor User
+participant searchbar
+collections mainPage
+database Database
+
+activate mainPage
+User -> searchbar: clicks on it
+activate searchbar
+User -> searchbar: enters search query
+mainPage -> Database: requests entries containing the keywords
+activate Database
+Database -> mainPage: sends results
+deactivate Database
+deactivate searchbar
+mainPage -> User: displays results (User can select one by swiping)
+@enduml

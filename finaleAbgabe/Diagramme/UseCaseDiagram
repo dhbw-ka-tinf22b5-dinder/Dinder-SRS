@@ -1,0 +1,33 @@
+@startuml
+left to right direction
+
+package dinder{
+package account {
+(register)
+(login)
+}
+
+package advertisement {
+(create)
+(edit)
+(delete)
+}
+
+package "find work" {
+(swipe)
+(approve swipe)
+}
+}
+
+:Contractor: as User
+:Advertiser:
+User --> register
+User --> login
+User --> swipe
+
+Advertiser --> create
+Advertiser --> edit
+Advertiser --> delete
+Advertiser --> (approve swipe)
+
+@enduml

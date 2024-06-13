@@ -1,0 +1,46 @@
+@startuml
+class LoginPage {
+{field} TextfieldUsername
+{field} TextfieldPassword
+{field} ButtonLogin
+}
+class RegistrationPage {
+{field} TextfieldUsername
+{field}  TextfieldPassword
+{field}  TextfieldConfirmPassword
+{field}  TextfieldEmail
+}
+class MainPage {
+{field} AdvertisementPicture
+{field} AdvertisementTitle
+{field}  SwipeButton
+}
+class ListedAdvertisements {
+{field}ListedAdvertisement
+
+}
+class AccteptedAdvertisements {
+{field} ListedAdvertisement
+}
+class NavigationBar {
+{field}ButtonMyListedAdervtisements
+{field} ButtonUser
+{field} ButtonMainPage
+}
+class SingleAdvertisement {
+{field} Picture
+{field} EmployerName
+{field} AdvertisementTitle
+{field} Date
+{field} Time
+{field} Description
+}
+
+MainPage <|-- NavigationBar
+ListedAdvertisements <|--  NavigationBar
+AccteptedAdvertisements <|-- NavigationBar
+LoginPage <|-- NavigationBar
+RegistrationPage <|--  NavigationBar
+ListedAdvertisements <|--  SingleAdvertisement
+AccteptedAdvertisements <|-- SingleAdvertisement
+@enduml

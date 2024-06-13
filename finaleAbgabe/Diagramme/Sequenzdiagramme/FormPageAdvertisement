@@ -1,0 +1,18 @@
+@startuml
+title Advertiser filling out the form page for a new advertisement
+
+actor "Advertiser"  as C
+participant "Web App Server" as S
+participant "Database" as DB
+
+activate S
+activate DB
+C -> S: Request Form Page
+S -> C: Form Page
+C -> S: Fill out Form
+C -> S: Submit Form
+S -> DB: Save Advertisement Data
+DB -> S: Confirmation
+S -> S : redirects to homepage
+
+@enduml

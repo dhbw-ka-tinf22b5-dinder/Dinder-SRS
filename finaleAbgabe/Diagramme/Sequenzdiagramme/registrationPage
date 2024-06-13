@@ -1,0 +1,29 @@
+@startuml
+
+title registration
+
+actor User
+collections WebApp_Server
+database Database
+
+User -> WebApp_Server : Enter user data
+activate WebApp_Server
+WebApp_Server -> WebApp_Server : checks if passwords comply with requirements
+
+alt passwords comply
+  WebApp_Server -> Database : checks for duplicate account
+  activate Database
+  alt no duplicate
+    Database -> WebApp_Server : send conformation
+    WebApp_Server -> Database : makes new Database entry
+    Database -> WebApp_Server : send conformation
+    WebApp_Server -> User: displays confirmation message
+  else duplicate found
+    Database -> WebApp_Server : sends error message
+    deactivate Database
+    WebApp_Server -> User : displays error message
+  end
+else passwords don't comply
+  WebApp_Server -> User : displays error message and clears passwords
+end
+@enduml

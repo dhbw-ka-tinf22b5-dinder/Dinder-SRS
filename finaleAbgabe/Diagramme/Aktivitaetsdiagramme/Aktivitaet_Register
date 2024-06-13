@@ -1,0 +1,42 @@
+@startuml
+|User|
+start
+:enters user details and credentials;
+|Frontend|
+if(details contain an error) then (yes)
+  :Display error;
+  end
+else (no)
+endif
+:Check if user exists;
+|Backend|
+if(user already registered) then (yes)
+  :Send 200;
+else (no)
+  :Send 404;
+endif
+|Frontend|
+if (request successful (200)) then (yes)
+  :Display error;
+  end
+else (no)
+  :Add new user in backend;
+  |Backend|
+  :Save user information in database;
+  :Send verification email;
+  |Frontend|
+  :Display that verification is needed;
+endif
+stop
+
+|User|
+start
+:clicks on link to verify mail;
+|Frontend|
+:verifies mail;
+|Backend|
+:set verified flag;
+|Frontend|
+:display that mail is now verified;
+stop
+@enduml

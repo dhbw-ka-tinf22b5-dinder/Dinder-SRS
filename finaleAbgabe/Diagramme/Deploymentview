@@ -1,0 +1,14 @@
+@startuml
+node "DB-Server Supabase" as db {
+    component PosgresSQLDatabse
+}
+node WebServer as ws {
+    component SpringBoot
+}
+
+node Client as c{
+    component NextJS
+}
+c - ws:https:8080 
+db- ws: jdbc:543s
+@enduml
