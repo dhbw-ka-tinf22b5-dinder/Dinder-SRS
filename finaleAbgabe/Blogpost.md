@@ -24,7 +24,7 @@ Im folgenden sind die einzelnen finalen Dokumente und Links des Projekts zusamme
 - [RUP SAD]()
 - [Qualitätsbericht]()
 - [CI/CD-Setup]()
-- [RMM]()
+- [RMM](https://github.com/dhbw-ka-tinf22b5-dinder/Dinder-SRS/blob/main/finaleAbgabe/RMM.md)
 - [Git-Repository](https://github.com/dhbw-ka-tinf22b5-dinder/Dinder)
 - [Scrum-Youtrack](https://dhbw-ka-tinf22b5-dinder.youtrack.cloud)
 - [Retrospektive](https://github.com/dhbw-ka-tinf22b5-dinder/Dinder-SRS/blob/main/finaleAbgabe/Retrospektive.md)
