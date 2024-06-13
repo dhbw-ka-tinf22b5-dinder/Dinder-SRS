@@ -12,7 +12,7 @@ Dinder soll eine Dienstleistungsvermittlung zwischen Privatpersonen sein. Hierbe
 - Lukas Schulz (Ende des dritten Semesters exmatrikuliert)
 
 ### Demo-Ausführung
-Damit die Demo ausgeführt werden kann, muss das Attribut aus der aktuellsten Pipeline heruntergelda   . Die Webseite ist anschließend unter localhost:8080 erreichbar. 
+Damit die Demo ausgeführt werden kann, muss das Attribut aus der aktuellsten Pipeline heruntergeldaden werden. Anschließend muss es entpackt werden und die batch-Datei in bin audgeführt werden. Die Webseite ist anschließend unter localhost:8080 erreichbar. 
 Die aktuelle Demo enthält die wesentlichen anfangs definierten Features, wobei die Chatfunktion, aufgrund der reduzierten Teamgröße im vierten Semester vernachlässigt wurde. Zusätzlich dazu würden in einer Weiterführung auch kleinere Probleme im Frontend behoben werden. Hierzu zählt das bei einigen Aktionen, wie die Anzeigeerstellung, die Swipebestätigung auf der Seite published advertisement sowie beim Logout die Seite neu geladen werden muss (F5). Dies kann nach dem Stand der Abgabe leider bisher nur fehlerfrei über Navigation zur Hauptseite (localhost:8080/) und anschließendem Neuladen durchgeführt werden.
 
 ## Checkliste
