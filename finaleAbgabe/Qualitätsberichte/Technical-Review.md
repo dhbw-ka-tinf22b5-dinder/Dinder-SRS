@@ -5,7 +5,7 @@
   - Tobias zeigt Code
   - Kai von Habittracking
   - Jannis Protokoll
-  - Manuel und Jonathan moderiert
+  - Manuel und Jonathan moderieren
 ## Ziel/Fokus :
 Das Ziel ist die Qualität in unserem Softwareprojekt zu steigern. Vor allem werden hier die Bereiche betrachtet, die noch entwickelt werden oder einfach zu ändern sind.
 - Überprüfung von Backend
