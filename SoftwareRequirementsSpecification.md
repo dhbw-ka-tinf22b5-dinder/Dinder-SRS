@@ -194,8 +194,7 @@ The application will have a high test coverage and all important functionalities
 ### 3.6 Design Constraints
 We are trying to provide a modern and easy to handle design for the UI aswell as for the architecture of our application. To achieve that the functionalities will be kept as modular as possible.
 
-We are using the common MVC-architecture to keep the front end and back end seperated. For a clean front end structure we use MVVM.
-For the Front End we will use React.
+We are using the common MVC-architecture to keep the front end and back end seperated. For a clean React front end structure we use MVVM.
 
 
 ### 3.7 Online User Documentation and Help System Requirements
