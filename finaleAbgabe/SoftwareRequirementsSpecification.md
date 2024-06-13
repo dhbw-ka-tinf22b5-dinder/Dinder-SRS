@@ -85,7 +85,7 @@ To enable anyone to browse the available jobs, such as babysitting, gardening or
 
 ### 2.2 Use Case Diagram
 
-![](../Diagramme/UseCaseDiagram.png)
+![](images/UseCaseDiagram.png)
 
 
 ### 2.3 Technology Stack
@@ -142,22 +142,22 @@ This section will explain the different use cases, you could see in the Use Case
 #### 3.1.1 Creating an account
 To identify all useres we need an account system. This account system enables us to build important functions.
 
-![](Diagramme/Sequenzdiagramme/registrationPage.png)
+![](Sequenzdiagramme/registrationPage.png)
 
 #### 3.1.2 Logging in
 The app will provide the possibility to register and log in.
 
-![](../Diagramme/Sequenzdiagramme/loginPageSource.png)
+![](Sequenzdiagramme/loginPageSource.png)
 
 #### 3.1.3 Form page for a new advertisement / edit an existing advertisement
 There is the possibility to fill out a form page to create a new service advertisement.
 
-![](../Diagramme/Sequenzdiagramme/FormPageAdvertisement.png)
+![](Sequenzdiagramme/FormPageAdvertisement.png)
 
 #### 3.1.4 Swiping
 The user can similar to Tinder swipe through open service advertisements and chose his preferred tasks.
 
-![](../Diagramme/Sequenzdiagramme/swipe.png)
+![](Sequenzdiagramme/swipe.png)
 
 ### 3.2 Usability
 We plan on designing the user interface as intuitive and self-explanatory as possible to make the user feel as comfortable as possible using the website.
