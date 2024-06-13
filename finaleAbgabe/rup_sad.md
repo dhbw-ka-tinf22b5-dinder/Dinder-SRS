@@ -78,7 +78,7 @@ Constraints:
 
 ## 4. Use-Case View
 
-![Use-Case-Diagram](../Diagramme/UseCaseDiagram.png)
+![Use-Case-Diagram](images/Diagramme/UseCaseDiagram.png)
 
 ### 4.1	Use-Case Realizations
 
@@ -88,9 +88,10 @@ UCRS for [registration](UCRS/advertisement.md)
 ## 5. Logical View
 
 ### 5.1 Overview
+Frontend
+![Frontend](images/Diagramme/Klassendiagramme/Frontend.png)
 
-![Frontend](Diagramme/Klassendiagramme/Frontend.png)
-![Backend](Diagramme/Klassendiagramme/Backend.png)
+[Backend](images/Diagramme/Klassendiagramme/Backend.png)
 
 ### 5.2 Architecturally Significant Design Packages
 
@@ -101,13 +102,13 @@ controller in the MVC pattern. The entity classes in the backend, as well as the
 represent the model in the MVC pattern.
 
 ## 6. Process View
-![Form Page](../Diagramme/Sequenzdiagramme/FormPageAdvertisement.png)
-![Login](../Diagramme/Sequenzdiagramme/loginPageSource.png)
-![Registration](../Diagramme/Sequenzdiagramme/registrationPage.png)
-![Swipe](../Diagramme/Sequenzdiagramme/swipe.png)
+![Form Page](images/Diagramme/Sequenzdiagramme/FormPageAdvertisement.png)
+![Login](images/Diagramme/Sequenzdiagramme/loginPageSource.png)
+![Registration](images/Diagramme/Sequenzdiagramme/registrationPage.png)
+![Swipe](images/Diagramme/Sequenzdiagramme/swipe.png)
 
 ## 7. Deployment View
-![Deployment](../Diagramme/Deploymentview.svg)
+![Deployment](images/Diagramme/Deploymentview.svg)
 
 ## 8. Implementation View
 
@@ -136,7 +137,7 @@ represent the model in the MVC pattern.
 
 ## 9. Data View (optional)
 
-![ER-Model](../handout/ER_Modell.png)
+![ER-Model](images/ER_Modell.png)
 
 ## 10. Size and Performance
 
