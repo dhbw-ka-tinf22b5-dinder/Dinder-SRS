@@ -25,6 +25,6 @@ Im folgenden sind die einzelnen finalen Dokumente und Links des Projekts zusamme
 - [Qualitätsbericht]()
 - [CI/CD-Setup]()
 - [RMM]()
-- [Git-Repository]()
-- [Scrum-Youtrack]()
+- [Git-Repository](https://github.com/dhbw-ka-tinf22b5-dinder/Dinder)
+- [Scrum-Youtrack](https://dhbw-ka-tinf22b5-dinder.youtrack.cloud)
 - [Retrospektive](https://github.com/dhbw-ka-tinf22b5-dinder/Dinder-SRS/blob/main/finaleAbgabe/Retrospektive.md)
