@@ -35,23 +35,23 @@ This document serves as the Software Requirements Specification (SRS) for the "D
 ### 1.2 Scope
 The project is going to be realized as a Web Application.
 
-Actors of this App are Users. These users have the roles of contractor or a employer.
+Actors of this App are Users. These users have the roles of contractor or an advertiser.
 
 Planned Subsystems are:
 * Login page:  
   Users can log in and register.
-* main page:  
-  Users can view the services they want to work on
+* Main page:  
+  Users can view the services they want to work on and either accept or decline them
 * Advertisement creation:  
   Users can create an advertisement for services for others to work on
-* Chat:  
-  contractor and employer chat to discuss details and pricing
+* Chat: contractor and employer chat to discuss details and pricing. This feature was delayed due to time concerns, mainly caused by a staff shortage during the later parts of development.
 *  Account System:  
   Users can create accounts, so they can accept a service advertisement. User data must be stored alongside the posting data.
 * Swiping:
   Similar to Tinder, the User should be able to swipe through open service advertisements 
 * Connecting People:  
-  The person who posts an available service task must be notified if someone wants to complete the service task. Both must then be able to get in touch to organize the details, so messages between the host and the guest have to be enabled. This will be done with a chat function. For this an account system is needed.
+  The person who posts an available service task must be notified if someone wants to complete the service task. Both must then be able to get in touch to organize the details, so messages between the host and the guest have to be enabled. This will be done with a chat function. For this an account system is needed.\
+  This task was also delayed due to time and staff restraints. It can be implemented in the future. 
 * Storing Data:  
   User data for accounts and possibly profiles has to be stored. Also, the service tasks have to be stored as datasets containing the form contents and possibly contact data. The data storage will form the foundation for the visualization, account system and the search feature.
 
@@ -70,8 +70,8 @@ Planned Subsystems are:
 
 | Title                                                                                               |    Date    | Publishing organization |
 |-----------------------------------------------------------------------------------------------------|:----------:|-------------------------|
-| [Dinder Blog](https://github.com/dhbw-ka-tinf22b5-dinder/Dinder/discussions/categories/projektblog) | 17.10.2023 | Dinder                  |
-| [GitHub](https://github.com/dhbw-ka-tinf22b5-dinder/Dinder/)                                        | 17.10.2023 | Dinder                  |
+| [Dinder Blog](https://github.com/dhbw-ka-tinf22b5-dinder/Dinder/discussions/categories/projektblog) | 13.06.2024 | Dinder                  |
+| [GitHub](https://github.com/dhbw-ka-tinf22b5-dinder/Dinder/)                                        | 13.06.2024 | Dinder                  |
 
 
 ### 1.5 Overview
@@ -99,10 +99,10 @@ The technology we use is:
 - Gradle
 - Spring Boot
 - JWT
+- Java + Kotlin
 
 ### Frontend:
 - Next.js
-- vite
 - TypeScript
 - styled-components
 - Redux
@@ -111,28 +111,26 @@ The technology we use is:
 ### Datenbank
 - PostgreSQL
 - Supabase
+- Supabase Storage
 - Flyway
 
 #### IDE:
 - IntelliJ
-- Eclipse
 
 #### Project Management:
 - YouTrack
 - GitHub
 - Discord
-- 
+
 #### Deployment:
-- Travis CI
-- Docker and Heroku
+- GitHub Actions
 
 #### Testing:
-- Cucumber
-- Espresso
 - JUnit
-- Codacy
-- CodeMR
 - RestAssured
+- SonarCloud
+- Biome
+- Mockito
 
 ## 3. Specific Requirements
 
@@ -160,36 +158,25 @@ The user can similar to Tinder swipe through open service advertisements and cho
 
 ![](Diagramme/Sequenzdiagramme/swipe.png)
 
-#### 3.1.5 Search function for open service advertisements
-The user can use a search function with individual filters (ex.: Distance)
-
-![](Diagramme/Sequenzdiagramme/search.png)
-
-
-#### 3.1.6 Chat function
-The user and the advertiser are able to exchange Details about the task in a private chat
-
-![](Diagramme/Sequenzdiagramme/ChatDinder.png)
-
 ### 3.2 Usability
-We plan on designing the user interface as intuitive and self-explanatory as possible to make the user feel as comfortable as possible using the website. Though an FAQ document will be available, it should not be necessary to use it.
+We plan on designing the user interface as intuitive and self-explanatory as possible to make the user feel as comfortable as possible using the website.
 
 #### 3.2.1 No training time needed
 Our goal is that a user opens the Web application and is able to use all features without any explanation or help.
 
 #### 3.2.2 Familiar Feeling
-We want to implement an website with familiar designs and functions. This way the user is able to interact in familiar ways with the Web app without having to get to know new interfaces.
+We want to implement a website with familiar designs and functions. This way the user is able to interact in familiar ways with the Web app without having to get to know new interfaces.
 
 
 ### 3.3 Reliability
 
 #### 3.3.1 Availability
-The server shall be available 95% of the time. This also means we have to figure out the "rush hours" of our app because the downtime of the server is only tolerable when as few as possible players want to use the app.
+The server shall be available 95% of the time. This also means we have to figure out the "rush hours" of our app because the downtime of the server is only tolerable when as few as possible players want to use the app. This is hard to be measured since we don't host our app yet, but the robust structure should easily allow us to reach that quota.
 
 ### 3.4 Performance
 
 #### 3.4.1 Capacity
-The system should be able to manage thousands of requests. Also it should be possible to register as many users as necessary.
+The system should be able to manage thousands of requests. It should also be possible to register as many users as necessary.
 
 
 #### 3.4.2 Web App perfomance / Response time
@@ -198,7 +185,7 @@ To provide the best App perfomance we aim to keep the response time as low as po
 ### 3.5 Supportability
 
 #### 3.5.1 Coding Standards
-We are going to write the code by using all of the most common clean code standards. For example we will name our variables and methods by their functionalities. This will keep the code easy to read by everyone and make further developement much easier.
+We are going to write the code by using all the most common clean code standards. For example, we will name our variables and methods by their functionalities. This will keep the code easy to read by everyone and make further developement much easier.
 
 #### 3.5.2 Testing Strategy
 The application will have a high test coverage and all important functionalities and edge cases should be tested. Further mistakes in the implementation will be discovered instantly, and it will be easy to locate the error.
@@ -210,8 +197,8 @@ We are using the common MVC-architecture to keep the front end and back end sepe
 For the Front End we will use React.
 
 
-### 3.7 On-line User Documentation and Help System Requirements
-The usage of the Web app should be as intuitive as possible so it won't need any further documentation. If the user needs some help we will implement a "Help"-Button in the App which includes a FAQ and a formular to contact the developement team.
+### 3.7 Online User Documentation and Help System Requirements
+The usage of the Web app should be as intuitive as possible so it won't need any further documentation.
 
 ### 3.8 Purchased Components
 We don't have any purchased components yet. If there will be purchased components in the future we will list them here.
@@ -220,20 +207,18 @@ We don't have any purchased components yet. If there will be purchased component
 
 #### 3.9.1 User Interfaces
 The User interfaces that will be implemented are:
-- Dashboard - lists all open service advertisements
-- Swiping - Makes it possible to swipe though service advertisements
-- Search - Makes it possible to search service advertisements
-- Service advertisements Creation - Makes it possible to crate new service advertisements
+- Swipe-Page - Makes it possible to swipe though service advertisements
+- Published Advertisements - Lists all advertisements that were created by the currently logged-in user together with which users swiped on them
+- Swiped Advertisements - Lists all advertisements that were swiped by the logged-in user, together with the status (if they were accepted/denied)
+- Advertisement Creation - Makes it possible to crate new service advertisements
 - Login - this page is used to log in
 - Register - provides a registration form
-- Profile - Shows the stats of your completed tasks
-- Settings - shows the settings, Changing Password, Email and profile picture is possible
 
 #### 3.9.2 Hardware Interfaces
 (n/a)
 
 #### 3.9.3 Software Interfaces
-In the first Stage it will be a Web App. In the Future an Android App is possible
+In the first Stage it will be a Web App. In the Future an Android App is possible.
 
 #### 3.9.4 Communication Interfaces
 The server and hardware will communicate using the http protocol.
@@ -241,19 +226,16 @@ The server and hardware will communicate using the http protocol.
 ### 3.10 Licensing Requirements
 
 ### 3.11 Legal, Copyright, and Other Notices
-The logo is licensed to the Common Playground Team and is only allowed to use for the application. We do not take responsibilty for any incorrect data or errors in the application.
+The background image is licensed to the Dinder Team and is only allowed to use for the application. We do not take responsibilty for any incorrect data or errors in the application.
 
 ### 3.12 Applicable Standards
-The development will follow the common clean code standards and naming conventions. Also we will create a definition of d which will be added here as soon as its complete.
+The development will follow the common clean code standards and naming conventions. Also, we will create a definition which will be added here as soon as its complete.
 
 ## 4. Supporting Information
 
 The Team Members are:
 - Jannis Fuchs (Frontend)
-- Lukas Schulz (Frontend)
+- Lukas Schulz (Frontend) (ehemalig)
 - Jonathan Schäfer (Backend)
 - Tobias Raible (Backend)
 - Manuel Franz (Database)
-
-<!-- Picture-Link definitions: -->
-[OUCD]: https://github.com/IB-KA/CommonPlayground/blob/master/UseCaseDiagramCP.png "Overall Use Case Diagram"
