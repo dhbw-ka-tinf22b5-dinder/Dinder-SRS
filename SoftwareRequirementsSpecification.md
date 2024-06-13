@@ -105,6 +105,7 @@ The technology we use is:
 - Next.js
 - TypeScript
 - styled-components
+- Material UI
 - Redux
 - React
 
