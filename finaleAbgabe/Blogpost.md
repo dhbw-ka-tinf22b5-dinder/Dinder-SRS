@@ -18,8 +18,8 @@ Die aktuelle Demo enthält die wesentlichen anfangs definierten Features, wobei 
 ## Checkliste
 Im folgenden sind die einzelnen finalen Dokumente und Links des Projekts zusammengefasst.
 ### Links/Dokumente
-- [Projekthandout]()
-- [Präsentationsfolien]()
+- Projekthandout ([docx](https://github.com/dhbw-ka-tinf22b5-dinder/Dinder-SRS/blob/main/finaleAbgabe/Handout_Dinder.docx), [pdf](https://github.com/dhbw-ka-tinf22b5-dinder/Dinder-SRS/blob/main/finaleAbgabe/Handout_Dinder.pdf))
+- Präsentation ([pptx](https://github.com/dhbw-ka-tinf22b5-dinder/Dinder-SRS/blob/main/finaleAbgabe/Pr%C3%A4sentation_Dinder.pptx), [pdf](https://github.com/dhbw-ka-tinf22b5-dinder/Dinder-SRS/blob/main/finaleAbgabe/Pr%C3%A4sentation_Dinder.pdf))
 - [RUP SRS]()
 - [RUP SAD]()
 - [Qualitätsbericht]()
