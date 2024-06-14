@@ -184,7 +184,7 @@ To provide the best App perfomance we aim to keep the response time as low as po
 ### 3.5 Supportability
 
 #### 3.5.1 Coding Standards
-We are going to write the code by using all the most common clean code standards. For example, we will name our variables and methods by their functionalities. This will keep the code easy to read by everyone and make further developement much easier.
+We are going to write the code by using all common clean code standards. For example, we will name our variables and methods by their functionalities. This will keep the code easy to read by everyone and make further developement much easier.
 
 #### 3.5.2 Testing Strategy
 The application will have a high test coverage and all important functionalities and edge cases should be tested. Further mistakes in the implementation will be discovered instantly, and it will be easy to locate the error.
