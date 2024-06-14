@@ -49,12 +49,12 @@ Das Ziel ist die Qualität in unserem Softwareprojekt zu steigern. Vor allem wer
 
 
 ## Ergebnis
-Im großen und ganzen macht das Backend einen sehr guten Eindruck trotz kleinerer Probleme
+Das Backend macht einen sehr guten Eindruck trotz kleinerer Probleme
 - Fehlerbehebung 
   - ERM vervollständigen
   - die Fehlersuche bei den Tests auswerten
   - die Kotlinverwendung ist allerdings ohne hohen Zusatzaufwand für die Verbindung zur Datenbank notwendig -> Beanstandung akzeptiert
     
-Das Frontend macht im großen und ganzen einen guten Eindruck, jedoch sind einzelne Verbesserungen umsetzbar, welche in Zukunft behandelt werden müssen.
+Das Frontend macht im großen und ganzen auch einen guten Eindruck, jedoch sind einzelne Verbesserungen umsetzbar, welche in Zukunft behandelt werden müssen.
  
 
