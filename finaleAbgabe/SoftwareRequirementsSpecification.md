@@ -170,8 +170,6 @@ We want to implement a website with familiar designs and functions. This way the
 
 
 ### 3.3 Reliability
-
-#### 3.3.1 Availability
 The server shall be available 95% of the time. This also means we have to figure out the "rush hours" of our app because the downtime of the server is only tolerable when as few as possible players want to use the app. This is hard to be measured since we don't host our app yet, but the robust structure should easily allow us to reach that quota.
 
 ### 3.4 Performance
