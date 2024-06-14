@@ -83,7 +83,7 @@ Constraints:
 ### 4.1	Use-Case Realizations
 
 UCRS for [advertisement](UCRS/advertisement.md) \
-UCRS for [registration](UCRS/advertisement.md)
+UCRS for [registration](UCRS/registration.md)
 
 ## 5. Logical View
 
