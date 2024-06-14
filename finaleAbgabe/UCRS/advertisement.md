@@ -1,7 +1,7 @@
 
 ## Use-Case-Realization Specification: Advertisement
 
-1. Introduction
+### Introduction
     1. Purpose
 
        The purpose of this use case is to create a new advertisement for a service with predefined characteristics.
@@ -11,7 +11,7 @@
        In particular, the "find work" use case is directly related to the described use case, since it is not possible to find work without an advertisement
   
 
-2. Flow of Events - Design
+### Flow of Events - Design
 
 [Sequence Diagram](../images/Diagramme/Sequenzdiagramme/FormPageAdvertisement.png)
 
