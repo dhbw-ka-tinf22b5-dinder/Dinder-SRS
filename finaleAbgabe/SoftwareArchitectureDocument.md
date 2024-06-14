@@ -68,7 +68,7 @@ Architectural Goals
   automatically.
 - The backend does all the logic while our frontend acts only as an interface to the api. Thus, we would also be able to
   create an Android or IOS-App very easily in the future.
-- We currently don’t use test driven development, but we will write tests in the future
+- We didn't use test driven development, but we did end up writing some tests (coverage ~63%).
 
 Constraints:
 
