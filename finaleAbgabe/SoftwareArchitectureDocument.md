@@ -115,6 +115,7 @@ represent the model in the MVC pattern.
 ### 8.1 Overview
 
 - Database
+    - It stores the data that must be saved permanently for the application (advertisement, user, swipe information).
 - backend
     - Since we use the MVC-pattern the backend handles the logic
     - It connects to the database using Hibernate
