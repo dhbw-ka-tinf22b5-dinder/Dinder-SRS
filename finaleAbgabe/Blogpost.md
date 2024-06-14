@@ -18,17 +18,17 @@ Die aktuelle Demo enthält die wesentlichen anfangs definierten Features, wobei 
 ## Checkliste
 Im folgenden sind die einzelnen finalen Dokumente und Links des Projekts zusammengefasst.
 ### Links/Dokumente
-- Projekthandout ([docx](https://github.com/dhbw-ka-tinf22b5-dinder/Dinder-SRS/blob/main/finaleAbgabe/Handout_Dinder.docx), [pdf](https://github.com/dhbw-ka-tinf22b5-dinder/Dinder-SRS/blob/main/finaleAbgabe/Handout_Dinder.pdf))
-- Präsentation ([pptx](https://github.com/dhbw-ka-tinf22b5-dinder/Dinder-SRS/blob/main/finaleAbgabe/Pr%C3%A4sentation_Dinder.pptx), [pdf](https://github.com/dhbw-ka-tinf22b5-dinder/Dinder-SRS/blob/main/finaleAbgabe/Pr%C3%A4sentation_Dinder.pdf))
+- Projekthandout ([docx](Handout_Dinder.docx), [pdf](Handout_Dinder.pdf))
+- Präsentation ([pptx](Pr%C3%A4sentation_Dinder.pptx), [pdf](Pr%C3%A4sentation_Dinder.pdf))
 - Qualitätsbericht
    - [Refactoring]()
    - [Softwaremetriken]()
    - [Technical Review]()
    - [Test Report]()
-- [CI/CD-Setup](https://github.com/dhbw-ka-tinf22b5-dinder/Dinder-SRS/blob/main/finaleAbgabe/CI_CD.md)
-- [RUP SRS](https://github.com/dhbw-ka-tinf22b5-dinder/Dinder-SRS/blob/main/finaleAbgabe/SoftwareRequirementsSpecification.md)
-- [RUP SAD](https://github.com/dhbw-ka-tinf22b5-dinder/Dinder-SRS/blob/main/finaleAbgabe/SoftwareArchitectureDocument.md)
-- [RMM](https://github.com/dhbw-ka-tinf22b5-dinder/Dinder-SRS/blob/main/finaleAbgabe/RMM.md)
+- [CI/CD-Setup](CI_CD.md)
+- [RUP SRS](SoftwareRequirementsSpecification.md)
+- [RUP SAD](SoftwareArchitectureDocument.md)
+- [RMM](RMM.md)
 - [Git-Repository](https://github.com/dhbw-ka-tinf22b5-dinder/Dinder)
 - [Scrum-Youtrack](https://dhbw-ka-tinf22b5-dinder.youtrack.cloud)
-- [Retrospektive](https://github.com/dhbw-ka-tinf22b5-dinder/Dinder-SRS/blob/main/finaleAbgabe/Retrospektive.md)
+- [Retrospektive](Retrospektive.md)
