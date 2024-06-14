@@ -199,7 +199,7 @@ We are using the common MVC-architecture to keep the front end and back end sepe
 The usage of the Web app should be as intuitive as possible so it won't need any further documentation.
 
 ### 3.8 Purchased Components
-We don't have any purchased components yet. If there will be purchased components in the future we will list them here.
+We don't have any purchased components in our project.
 
 ### 3.9 Interfaces
 
