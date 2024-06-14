@@ -142,7 +142,7 @@ This section will explain the different use cases, you could see in the Use Case
 #### 3.1.1 Creating an account
 To identify all useres we need an account system. This account system enables us to build important functions.
 
-![](Sequenzdiagramme/registrationPage.png)
+![](https://github.com/dhbw-ka-tinf22b5-dinder/Dinder-SRS/edit/main/finaleAbgabe/Sequenzdiagramme/registrationPage.png)
 
 #### 3.1.2 Logging in
 The app will provide the possibility to register and log in.
