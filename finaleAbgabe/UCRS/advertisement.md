@@ -33,4 +33,4 @@ Advertisement Added:
 
 View Advertisement:
 
-- After successful creation, the user can view his created activities through server-user communication view
+- After successful creation, the user can view his created activities.
