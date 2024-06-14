@@ -16,7 +16,7 @@
 
 2. Flow of Events - Design
 
-[Sequence Diagram](../Diagramme/Sequenzdiagramme/FormPageAdvertisement.png)
+[Sequence Diagram](../images/Diagramme/Sequenzdiagramme/FormPageAdvertisement.png)
 
 Request From Page:
 
