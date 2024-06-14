@@ -4,15 +4,12 @@
 1. Introduction
     1. Purpose
 
-       The purpose of this use case is to create a new ad for a service with predefined characteristics.
+       The purpose of this use case is to create a new advertisement for a service with predefined characteristics.
     
     2. Scope
 
        In particular, the "find work" use case is directly related to the described use case, since it is not possible to find work without an advertisement
-    3. Definitions, Acronyms, and Abbreviations
-
-       to be defined
-
+  
 
 2. Flow of Events - Design
 
