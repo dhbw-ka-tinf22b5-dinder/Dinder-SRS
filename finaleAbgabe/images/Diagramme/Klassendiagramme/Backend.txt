@@ -1,0 +1,321 @@
+@startuml
+Interface AuthoritySupplier{
++Set<GrantedAuthority> get(String email)
+}
+
+Class AuthorizationFilter{
+-UserService userService
+#void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain)
+}
+AuthorizationFilter -u-> UserService : use
+
+Class MvcConfig{
++void addViewControllers(ViewControllerRegistry registry)
+}
+WebMvcConfigurer <|-- MvcConfig
+
+Class SecurityConfig{
+-UserService userService
++SecurityFilterChain securityFilterChain(HttpSecurity httpSecurity)
+}
+SecurityConfig -u-> UserService : use
+
+
+Class AdvertisementController{
+-UserService userService
+-AdvertisementService advertisementService
+-SupabaseService supabaseService
++List<Integer> getAllAdvertisements()
++List<Integer> getAllOpenAdvertisements()
++AdvertisementInformationModel getAdvertisementById(int id)
++HttpHeaders getHeadersForResource(String file)
++ResponseEntity<Resource> getNoImageResponse()
++ResponseEntity<Resource> getAdvertisementImageById(int id)
++MimeType getMimeType(InputStream inputStream)
++Advertisement createAdvertisement(AddAdvertisementModel model, Principal principal)
++AdvertisementInformationModel addImage(Resource file, int id, Principal principal)
+}
+AdvertisementController -u-> UserService : use
+AdvertisementController -u-> AdvertisementService : use
+AdvertisementController -u-> SupabaseService : use
+
+Class ReactController{
++String getIndex()
+}
+
+Class SwipeInformationController{
+-SwipeInformationService swipeInformationService
+-UserService userService
+-AdvertisementService advertisementService
++List<SwipeInformationModel> getAll(int advertisementId)
++AdvertisementInformationModel acceptAdvertisement(int advertisementId, int id, Principal principal)
++SwipeInformationModel addSwipe(AddSwipeInformationModel model, int advertisementId, Principal principal)
+}
+SwipeInformationController -u-> SwipeInformationService : use
+SwipeInformationController -u-> UserService : use
+SwipeInformationController -u-> AdvertisementService : use
+
+Class UserController{
++String SESSION_ID_COOKIE
+-UserService userService
+-SecurityService securityService
+-SwipeInformationService swipeInformationService
+-Cookie generateSessionIDCookie(String email)
+-Cookie generateLogoutCookie()
++boolean login(LoginModel loginModel, HttpServletResponse response)
++boolean logout(HttpServletRequest request, HttpServletResponse response)
++boolean register(RegisterModel registerModel, HttpServletResponse response)
++UserInformationModel getUserInfo(String email)
++UserInformationModel getMyUserInfo(HttpServletRequest request)
++List<SwipeInformationModel> getMySwipes(Principal principal)
+}
+UserController -u-> UserService : use
+UserController -u-> SecurityService : use
+UserController -u-> SwipeInformationService : use
+
+
+Class DinderApplication{
++void main(String[] args)
+}
+
+Class Advertisement{
+-int advertisementId
+-String title
+-double price
+-String location
+-int postalCode
+-String description
+-String imagePath
+-Users advertiser
+-Users contractor
+-Instant creationTime
+-Set<SwipeInformation> swipeInformations
++Advertisement fromModel(AddAdvertisementModel addAdvertisementModel, Users advertiser, String image)
++Advertisement fromModel(AddAdvertisementModel addAdvertisementModel, Users advertiser)
++Advertisement fromModel(AddAdvertisementModel addAdvertisementModel)
++String getFileName()
++AdvertisementInformationModel toInformationModel()
+}
+Advertisement -u-> Users : use
+
+Class ChatMessages{
+-int messageId
+-String message
+-Instant dateTime
+-SwipeInformation swipeId
+-Users senderEmail
+}
+ChatMessages -u-> SwipeInformation : use
+ChatMessages -u-> Users : use
+
+Class SwipeInformation{
+-int swipeId
+-Instant swipeTime
+-SwipeState swipeState
+-Advertisement advertisement
+-Users contractor
++SwipeInformationModel toInformationModel()
+}
+SwipeInformation -u-> SwipeState : use
+SwipeInformation -u-> Advertisement : use
+SwipeInformation -u-> Users : use
+
+Class Users{
+-String email
+-String userName
+-String pwdHash
++Collection<? extends GrantedAuthority> getAuthorities()
++String getPassword()
++String getUsername()
++boolean isAccountNonExpired()
++boolean isAccountNonLocked()
++boolean isCredentialsNonExpired()
++boolean isEnabled()
++UserInformationModel toInformationModel()
+}
+UserDetails <|-- Users
+
+
+Class AddAdvertisementModel{
+-String title
+-double price
+-String location
+-int postalCode
+-String description
++AddAdvertisementModel(String title, double price, String location, int postalCode, String description)
++String title()
++double price()
++String location()
++int postalCode()
++String description()
+}
+RequestModel <|-- AddAdvertisementModel
+
+Class AddSwipeInformationModel{
+-SwipeState swipeState
++AddSwipeInformationModel(SwipeState swipeState)
++SwipeState swipeState()
+}
+RequestModel <|-- AddSwipeInformationModel
+
+Class LoginModel{
+-String loginName
+-String password
++LoginModel(String loginName, String password)
++String loginName()
++String password()
+}
+RequestModel <|-- LoginModel
+
+Class RegisterModel{
+-String email
+-String userName
+-String password
++RegisterModel(String email, String userName, String password)
++String email()
++String userName()
++String password()
+}
+RequestModel <|-- RegisterModel
+RegisterModel -u-> Pattern : use
+
+Interface RequestModel{
++boolean isInvalid()
+}
+
+
+Class AdvertisementInformationModel{
+-int advertisementId
+-String title
+-double price
+-String location
+-int postalCode
+-String description
+-String imagePath
+-UserInformationModel advertiser
+-UserInformationModel contractor
+-Instant creationTime
++AdvertisementInformationModel(int advertisementId, String title, double price, String location, int postalCode, String description, String imagePath, UserInformationModel advertiser, UserInformationModel contractor, Instant creationTime)
++int advertisementId()
++String title()
++double price()
++String location()
++int postalCode()
++String description()
++String imagePath()
++UserInformationModel advertiser()
++UserInformationModel contractor()
++Instant creationTime()
+}
+
+Class SwipeInformationModel{
+-int swipeId
+-Instant swipeTime
+-SwipeState swipeState
+-AdvertisementInformationModel advertisement
+-UserInformationModel user
++SwipeInformationModel(int swipeId, Instant swipeTime, SwipeState swipeState, AdvertisementInformationModel advertisement, UserInformationModel user)
++int swipeId()
++Instant swipeTime()
++SwipeState swipeState()
++AdvertisementInformationModel advertisement()
++UserInformationModel user()
+}
+
+Class UserInformationModel{
+-String userName
++UserInformationModel(String userName)
++String userName()
+}
+
+
+Enum SwipeState{
+DECLINED
+ACCEPTED
+REMIND_ME_LATER
+}
+
+
+Interface AdvertisementRepository{
++List<Advertisement> findAllByContractorIsNull()
+}
+
+Interface SwipeInformationRepository{
++List<SwipeInformation> findAllByAdvertisement(Advertisement advertisement)
++Optional<SwipeInformation> findSwipeInformationByAdvertisementAndContractor(Advertisement advertisement, Users contractor)
++List<SwipeInformation> findAllByContractor(Users contractor)
+}
+
+Interface UserRepository{
+}
+
+
+Class RsaKeyProperties{
+-RSAPublicKey publicKey
+-RSAPrivateKey privateKey
++RsaKeyProperties(RSAPublicKey publicKey, RSAPrivateKey privateKey)
++RSAPublicKey publicKey()
++RSAPrivateKey privateKey()
+}
+
+Class AdvertisementService{
+-AdvertisementRepository advertisementRepository
++List<Advertisement> getAllAdvertisements()
++List<Advertisement> getOpenAdvertisements()
++Optional<Advertisement> getAdvertisementById(int id)
++Optional<AdvertisementInformationModel> getAdvertisementFromId(int id)
++Advertisement createAdvertisement(AddAdvertisementModel model, Users user, String filePath)
++Advertisement updateAdvertisement(Advertisement advertisement)
++Advertisement createAdvertisement(AddAdvertisementModel model, Users user)
+}
+AdvertisementService -u-> AdvertisementRepository : use
+
+Class SecurityService{
+-RsaKeyProperties rsaKeys
++PasswordEncoder passwordEncoder()
++String getEmail(String token)
++String generateKey(String email)
++Optional<UsernamePasswordAuthenticationToken> validate(String token, AuthoritySupplier authoritySupplier)
+}
+SecurityService -u-> RsaKeyProperties : use
+
+Class SupabaseService{
+-SupabaseClient supabaseClient
++BucketApi getBucket(String name)
++Optional<CompletableFuture<byte[]>> getImage(Advertisement advertisement)
++CompletableFuture<String> uploadFile(BucketApi bucket, byte[] file, String path)
++CompletableFuture<byte[]> downloadFile(BucketApi bucket, String path)
+-Storage getStorage()
+}
+SupabaseService -u-> SupabaseClient : use
+
+Class SwipeInformationService{
+-SwipeInformationRepository swipeInformationRepository
++Optional<SwipeInformation> findById(int id)
++List<SwipeInformation> getAllByUser(Users users)
++Optional<SwipeInformation> findByAdvertisementAndContractor(Advertisement advertisement, Users contractor)
++List<SwipeInformation> getAllByAdvertisement(Advertisement advertisement)
++SwipeInformation addSwipeInformation(Instant swipeTime, SwipeState swipeState, Advertisement advertisementId, Users contractorEmail)
++SwipeInformation updateSwipeInformation(SwipeInformation swipeInformation)
+}
+SwipeInformationService -u-> SwipeInformationRepository : use
+
+Class UserService{
+-UserRepository userRepository
+-PasswordEncoder passwordEncoder
+-SecurityService securityService
++boolean login(LoginModel model)
++boolean register(RegisterModel registerModel)
++Optional<UsernamePasswordAuthenticationToken> validateToken(String token)
++Users loadUserByUsername(String username)
++Optional<UserInformationModel> getUserInfo(String email)
+}
+UserDetailsService <|-- UserService
+UserService -u-> UserRepository : use
+UserService -u-> PasswordEncoder : use
+UserService -u-> SecurityService : use
+
+
+
+
+@enduml
