@@ -15,7 +15,7 @@
 
 2. Flow of Events - Design
 
-[Sequence Diagram](../Diagramme/Sequenzdiagramme/registrationPage.png)
+[Sequence Diagram](../images/Diagramme/Sequenzdiagramme/registrationPage.png)
 
 enter user data:
 
