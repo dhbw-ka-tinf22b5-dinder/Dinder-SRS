@@ -125,7 +125,7 @@ represent the model in the MVC pattern.
 
 ### 8.2 Layers
 
-![Component-Diagram](componentDiagram.png)
+![Component-Diagram](images/Diagramme/componentDiagram.png)
 
 - backend:
     - controller: endpoints of the api
