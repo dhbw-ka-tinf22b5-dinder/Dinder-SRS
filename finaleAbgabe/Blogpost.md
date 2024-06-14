@@ -24,7 +24,7 @@ Im folgenden sind die einzelnen finalen Dokumente und Links des Projekts zusamme
    - [Refactoring](Qualitätsberichte/Refactoring.md)
    - [Softwaremetriken](Qualitätsberichte/Metriken.md)
    - [Technical Review](Qualitätsberichte/Technical-Review.md)
-   - [Test Report](Qualitätsberichte/Testplan.md)
+   - [Test Plan](Qualitätsberichte/Testplan.md)
 - [CI/CD-Setup](CI_CD.md)
 - [RUP SRS](SoftwareRequirementsSpecification.md)
 - [RUP SAD](SoftwareArchitectureDocument.md)
