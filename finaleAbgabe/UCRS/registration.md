@@ -2,7 +2,8 @@
 ## Use-Case-Realization Specification: Registration
 
 
-1. Introduction
+### Introduction
+
     1. Purpose
 
        The purpose of this use case is to let the user create an account.
@@ -13,7 +14,7 @@
     
 
 
-2. Flow of Events - Design
+### Flow of Events - Design
 
 [Sequence Diagram](../images/Diagramme/Sequenzdiagramme/registrationPage.png)
 
