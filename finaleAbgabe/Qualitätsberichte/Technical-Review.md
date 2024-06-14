@@ -9,7 +9,7 @@
 ## Ziel/Fokus :
 Das Ziel ist die Qualität in unserem Softwareprojekt zu steigern. Vor allem werden hier die Bereiche betrachtet, die noch entwickelt werden oder einfach zu ändern sind. Dadurch hat das Review den größtmöglichen Einfluss auf die kommende Softwareentwicklung des Projekts. Zusätzlich wurde das Frontend nochmal genauer betrachtet, da hier keine direkten Tests geschrieben wurden.
 - Überprüfung von Backend
-  - Datenbankmodells
+  - Datenbankmodell
   - Entities
 - Überprüfung von Frontend
   - Migration von React aus NextJS
