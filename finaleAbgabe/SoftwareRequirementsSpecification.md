@@ -22,9 +22,7 @@
     - [Online User Documentation and Help System Requirements](#37-on-line-user-documentation-and-help-system-requirements)
     - [Purchased Components](#38-purchased-components)
     - [Interfaces](#39-interfaces)
-    - [Licensing Requirements](#310-licensing-requirements)
-    - [Legal, Copyright And Other Notices](#311-legal-copyright-and-other-notices)
-    - [Applicable Standards](#312-applicable-standards)
+    - [Applicable Standards](#310-applicable-standards)
 - [Supporting Information](#4-supporting-information)
 
 ## 1. Introduction
@@ -204,7 +202,7 @@ We don't have any purchased components in our project.
 ### 3.9 Interfaces
 
 #### 3.9.1 User Interfaces
-The User interfaces that will be implemented are:
+The implemented User interfaces are:
 - Swipe-Page - Makes it possible to swipe though service advertisements
 - Published Advertisements - Lists all advertisements that were created by the currently logged-in user together with which users swiped on them
 - Swiped Advertisements - Lists all advertisements that were swiped by the logged-in user, together with the status (if they were accepted/denied)
@@ -212,28 +210,20 @@ The User interfaces that will be implemented are:
 - Login - this page is used to log in
 - Register - provides a registration form
 
-#### 3.9.2 Hardware Interfaces
-(n/a)
-
 #### 3.9.3 Software Interfaces
 In the first Stage it will be a Web App. In the Future an Android App is possible.
 
 #### 3.9.4 Communication Interfaces
-The server and hardware will communicate using the http protocol.
+The backend and the frontend communicate via http, while the backend communicates with the database via jdbc.
 
-### 3.10 Licensing Requirements
-
-### 3.11 Legal, Copyright, and Other Notices
-The background image is licensed to the Dinder Team and is only allowed to use for the application. We do not take responsibilty for any incorrect data or errors in the application.
-
-### 3.12 Applicable Standards
-The development will follow the common clean code standards and naming conventions. Also, we will create a definition which will be added here as soon as its complete.
+### 3.10 Applicable Standards
+The development will follow the common clean code standards and naming conventions.
 
 ## 4. Supporting Information
 
 The Team Members are:
 - Jannis Fuchs (Frontend)
-- Lukas Schulz (Frontend) (ehemalig)
+- Lukas Schulz (Frontend) (former)
 - Jonathan Schäfer (Backend)
 - Tobias Raible (Backend)
 - Manuel Franz (Database)
