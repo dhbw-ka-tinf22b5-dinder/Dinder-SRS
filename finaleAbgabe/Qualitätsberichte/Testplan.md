@@ -166,7 +166,7 @@ The results of the tests and code coverage can be seen in the [SonarCloud summar
 ## 6. Deliverables
 
 ## 6.1 Test Evaluation Summaries
-The project owns a certain amount of tests in the Frontend and Backend. Each pushed commit should trigger the projects CI/CD Pipeline, which builds the application and executes the tests with a code analysis with SonarCloud.
+The project owns a certain amount of tests. Each pushed commit should trigger the projects CI/CD Pipeline, which builds the application and executes these tests with a code analysis with SonarCloud.
 
 
 ## 6.2 Reporting on Test Coverage
